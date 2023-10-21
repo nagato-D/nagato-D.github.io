@@ -6,11 +6,12 @@ draft = false
 
 ## Biography
 ---
-I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) at the University of Hong Kong. Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Professor [L. Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the [Yingcai Honor College](https://www.yingcai.uestc.edu.cn/xygk/xyjj.htm) of University of Electronic Science and Technology in 2021.
+I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) at the University of Hong Kong. Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Professor [L. Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the [Yingcai Honor College](https://www.yingcai.uestc.edu.cn/xygk/xyjj.htm) of University of Electronic Science and Technology of China in 2021.
 
-## Internship
+## Employment
 ---
 + **Baidu Inc.** R&D internship in quantum AI, supervised by Dr. [Kun Fang](https://scholar.google.com/citations?user=YlfYNwcAAAAJ&hl=en&inst=6173373803492361994&oi=ao) and Prof. [Xin Wang](https://www.xinwang.info/).
++ **Bilibili Inc.** disciplinary committee member (风纪委员).
 
 ## Publication
 ---
@@ -22,6 +23,12 @@ I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) a
 + Kun Fang, **Di Yu** (2023). Patent Name. [patent_number](patent_link)
 + Kun Fang, **Di Yu** (2023). Patent Name. [patent_number](patent_link)
 + Kun Fang, **Di Yu** (2023). Patent Name. [patent_number](patent_link)
+
+## Useful Links
+---
++ [Compute Berry curvature for two-dimensional photonic crystals](https://github.com/nagato-D/Berry-curvature-for-photonic-crystals/releases/tag/v2.0.0)
++ [MyGO_AveMujica](https://space.bilibili.com/1459104794?spm_id_from=333.337.0.0)
++ [Xiaochuan Sun's Bar](https://tieba.baidu.com/f?kw=%E5%AD%99%E7%AC%91%E5%B7%9D&ie=utf-8)
 
 ## Archive
 ---
