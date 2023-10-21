@@ -6,7 +6,7 @@ draft = false
 
 ## Biography
 ---
-I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) at the University of Hong Kong. Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Professor [L. Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the [Yingcai Honor College](https://www.yingcai.uestc.edu.cn/xygk/xyjj.htm) of the University of Electronic Science and Technology in 2021.
+I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) at the University of Hong Kong. Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Professor [L. Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the [Yingcai Honor College](https://www.yingcai.uestc.edu.cn/xygk/xyjj.htm) of University of Electronic Science and Technology in 2021.
 
 ## Internship
 ---
