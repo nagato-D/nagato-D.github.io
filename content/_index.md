@@ -20,9 +20,9 @@ I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) a
 
 ## Patents
 ---
-+ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [BO230913IQC1](patent_link)
-+ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [BO230907IQC3](patent_link)
-+ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [BO230828IQC3](patent_link)
++ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [*BO230913IQC1*](patent_link)
++ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [*BO230907IQC3*](patent_link)
++ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [*BO230828IQC3*](patent_link)
 
 ## Useful Links
 ---
