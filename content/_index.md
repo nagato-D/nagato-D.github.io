@@ -8,6 +8,12 @@ draft = false
 ---
 I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) at the University of Hong Kong. Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Prof. [L. Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the [Yingcai Honor College](https://www.yingcai.uestc.edu.cn/xygk/xyjj.htm) of University of Electronic Science and Technology of China in 2021.
 
+## Education
+---
++ Ph.D. in Electrical and Electronic Engineering, HKU
++ M.S. in Applied Physics, TU Delft
++ B.S. in Mathematics & Physics, UESTC
+
 ## Employment
 ---
 + **Baidu Inc.** R&D internship in quantum AI, supervised by Dr. [Kun Fang](https://scholar.google.com/citations?user=YlfYNwcAAAAJ&hl=en&inst=6173373803492361994&oi=ao) and Prof. [Xin Wang](https://www.xinwang.info/).
