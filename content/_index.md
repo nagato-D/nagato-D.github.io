@@ -10,14 +10,13 @@ I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) a
 
 ## Education
 ---
-**Ph.D. in Electrical and Electronic Engineering, HKU**
+Ph.D. in Electrical and Electronic Engineering, HKU
 + Supervisor: Prof. [Chao Xiang](https://chao-xiang.github.io/)
 
-**M.S. in Applied Physics, TU Delft**
+M.S. in Applied Physics, TU Delft
 + Supervisor: Prof. [L. Kuipers](https://kuiperslab.tudelft.nl/)
-+ Grade: Rank top 3% in the Dept. of Applied Physics
 
-**B.S. in Mathematics & Physics, UESTC**
+B.S. in Mathematics & Physics, UESTC
 + Grade: Rank 1st in Yingcai Honor College
 
 ## Employment
