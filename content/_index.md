@@ -26,7 +26,7 @@ B.S. in Mathematics & Physics, UESTC
 
 ## Publication
 ---
-+ **Di Yu**, Kun Fang (2023). Symmetry-based quantum circuit remapping. [*arxiv:tbd*](https://arxiv.org/abs/tbd).
++ **Di Yu**, Kun Fang (2023). Symmetry-based quantum circuit remapping. [*arxiv:2310.18026*](https://arxiv.org/abs/2310.18026).
 + **Di Yu**, Sonakshi Arora, L. Kuipers (2023). Impact of transforming interface geometry on edge states in valley photonic crystals. [*arXiv:2310.00858*](https://arxiv.org/abs/2310.00858).
 
 <!-- ## Patents
