@@ -29,11 +29,11 @@ B.S. in Mathematics & Physics, UESTC
 + **Di Yu**, Kun Fang (2023). Symmetry-based quantum circuit remapping. [*arxiv:2310.18026*](https://arxiv.org/abs/2310.18026).
 + **Di Yu**, Sonakshi Arora, L. Kuipers (2023). Impact of transforming interface geometry on edge states in valley photonic crystals. [*arXiv:2310.00858*](https://arxiv.org/abs/2310.00858).
 
-<!-- ## Patents
+## Patents
 ---
-+ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [*BO230913IQC1*](patent_link)
-+ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [*BO230907IQC3*](patent_link)
-+ Kun Fang, **Di Yu** (2023). Quantum circuit mapping method, apparatus, and electronic device. [*BO230828IQC3*](patent_link) -->
++ Kun Fang, **Di Yu** (2023). Method, apparatus, and electronic device for quantum circuit mapping. *CN202311386062.6*.
++ Kun Fang, **Di Yu** (2023). Method, apparatus, and electronic device for quantum circuit mapping. *CN202311386622.8*.
++ Kun Fang, **Di Yu** (2023). Method, apparatus, and electronic device for quantum circuit mapping. *CN202311386213.8*.
 
 ## Useful Links
 ---
