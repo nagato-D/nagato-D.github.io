@@ -6,6 +6,30 @@ draft = false
 
 # Patents
 ---
-+ Kun Fang, **Di Yu** (2023). Method, apparatus, and electronic device for quantum circuit mapping. *CN202311386062.6*.
-+ Kun Fang, **Di Yu** (2023). Method, apparatus, and electronic device for quantum circuit mapping. *CN202311386622.8*.
-+ Kun Fang, **Di Yu** (2023). Method, apparatus, and electronic device for quantum circuit mapping. *CN202311386213.8*.
+## 2023
+
+{{< admonition note "Method, apparatus, and electronic device for quantum circuit mapping" >}}
+量子电路映射方法、装置及电子设备
+
+Kun Fang, **Di Yu**
+
+:(fa-solid fa-link): CN2023113860626
+{{< /admonition >}}
+
+
+{{< admonition note "Method, apparatus, and electronic device for quantum circuit mapping" >}}
+量子电路映射方法、装置及电子设备
+
+Kun Fang, **Di Yu**
+
+:(fa-solid fa-link): CN2023113866228
+{{< /admonition >}}
+
+
+{{< admonition note "Method, apparatus, and electronic device for quantum circuit mapping" >}}
+量子电路映射方法、装置及电子设备
+
+Kun Fang, **Di Yu**
+
+:(fa-solid fa-link): CN2023113862138
+{{< /admonition >}}
