@@ -7,7 +7,6 @@ draft = false
 # Publications
 ---
 ## 2023
-
 {{< admonition note "Symmetry-Based Quantum Circuit Mapping" >}}
 **Di Yu**, Kun Fang
 

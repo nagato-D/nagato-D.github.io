@@ -7,7 +7,6 @@ draft = false
 # Patents
 ---
 ## 2023
-
 {{< admonition note "Method, apparatus, and electronic device for quantum circuit mapping" >}}
 量子电路映射方法、装置及电子设备
 
