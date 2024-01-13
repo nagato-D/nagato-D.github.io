@@ -1,5 +1,5 @@
 +++
-title = 'Note on Deploying a Website on Github'
+title = 'Note on Deploying a Personal Website on Github'
 author = 'Di Yu'
 date = 2023-10-15
 draft = false
@@ -64,6 +64,7 @@ draft = false
 2. Modify the parameters specified in `hugo.toml`, such as website title, avatarURL, and social links.
 3. In order to add a menu in the homepage, like the tags in the right top, following the menu setting in the [`config.toml`](https://github.com/dillonzq/LoveIt/blob/master/exampleSite/config.toml) file to configure the `hugo.toml` file in the website root directory.
 4. A recommended file structure/organization of the contents can be found [here](https://github.com/dillonzq/LoveIt/tree/master/exampleSite).
+5. To enable the display of LaTeX-style equations, set `enable = true` under the `params.page.math` item of `hugo.toml`.
 
 ## Add Icons
 ---
