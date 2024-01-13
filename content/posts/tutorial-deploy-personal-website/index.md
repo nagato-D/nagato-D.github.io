@@ -1,10 +1,11 @@
-+++
+---
 title = 'Note on Deploying a Website on Github'
-date = 2023-10-15T11:10:01+08:00
+author = Di Yu
+date = today
 draft = false
-+++
+---
 
-**Author:** Di Yu (email: yudi.0211@foxmail.com)
+<!-- **Author:** Di Yu (email: yudi.0211@foxmail.com) -->
 
 ## Create a Markdown File
 ---
