@@ -1,6 +1,6 @@
 ---
 title = 'Note on Deploying a Website on Github'
-author = Di Yu
+author = 'Di Yu'
 date = today
 draft = false
 ---
