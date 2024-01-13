@@ -1,8 +1,9 @@
----
++++
 title = 'Note on Deploying a Website on Github'
-date = 2023-10-15T11:10:01+08:00
+author = 'Di Yu'
+date = 2023-10-15
 draft = false
----
++++
 
 <!-- **Author:** Di Yu (email: yudi.0211@foxmail.com) -->
 
