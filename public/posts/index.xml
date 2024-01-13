@@ -1,11 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Di Yu Homepage</title>
-        <link>https://nagato-D.github.io/</link>
-        <description>Di Yu&#39;s Homepage</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 20 Oct 2023 22:57:03 &#43;0800</lastBuildDate>
-            <atom:link href="https://nagato-D.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+        <title>All Posts - Di Yu Homepage</title>
+        <link>https://nagato-D.github.io/posts/</link>
+        <description>All Posts | Di Yu Homepage</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 27 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://nagato-D.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Note on Effective Index</title>
     <link>https://nagato-D.github.io/posts/tutorial-effective-index/</link>
     <pubDate>Wed, 27 Dec 2023 00:00:00 &#43;0000</pubDate>
