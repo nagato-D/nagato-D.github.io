@@ -16,3 +16,7 @@ draft = false
 + [Fate/stay night UBW](https://www.bilibili.com/bangumi/media/md1586)
 + [魔法少女小圆](https://www.bilibili.com/bangumi/play/ss2539)
 + 无职转生
+
+## Gallary
+
+![长门有希](/favorites/nagato_yuki.jpg)
