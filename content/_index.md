@@ -27,3 +27,7 @@ Integrated optics, condensed matter physics, quantum computation
 ---
 + **Baidu Inc.** R&D internship in quantum AI, supervised by Dr. [Kun Fang](https://scholar.google.com/citations?user=YlfYNwcAAAAJ&hl=en&inst=6173373803492361994&oi=ao) and Prof. [Xin Wang](https://www.xinwang.info/).
 + **Bilibili Inc.** disciplinary committee member (风纪委员).
+
+## News
+---
++ Coming soon.
