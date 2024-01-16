@@ -10,7 +10,7 @@ I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) a
 
 ## Interests
 ---
-Integrated optics, condensed matter physics, quantum computation
+Integrated optoelectronics, condensed matter physics, quantum computation
 
 ## Education
 ---
