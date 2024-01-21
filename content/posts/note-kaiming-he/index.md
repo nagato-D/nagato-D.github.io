@@ -1,7 +1,7 @@
 +++
-title = 'Note on Kaiming He's PhD Thesis'
+title = "Note on Kaiming He's PhD Thesis"
 author = 'Di Yu'
-date = 2023-10-20
+date = 2024-01-20
 draft = false
 +++
 
@@ -9,13 +9,13 @@ draft = false
 
 ---
 
-[Kaiming He](https://kaiminghe.github.io/) is an influential scholar in the field of computer vision. His papers have received more than 500,000 citations as of 2023, according to [Google Scholar](https://scholar.google.com/citations?user=DhtAFkwAAAAJ&hl=en&oi=ao). His research about ResNets has become a basic building block of artificial intelligence system today. Kaiming He is now a faculty member of the department of EECS at MIT since 2024. Prior to this, he worked in Facebook as a research scientist since 2016. Before that, Kaiming He was a researcher at Microsoft since 2011. He obtained his PhD degree from the Chinese University of Hong Kong (CUHK), supervised by Xiaoou Tang. In this note, I will briefly introduce Kaiming He's PhD thesis, titled "[Single Image Haze Removal Using Dark Channel Prior](https://kaiminghe.github.io/publications/thesis.pdf)" [[1](#reference)], in order to learn about how to conduct influential research and write appealling papers.
+[Kaiming He](https://kaiminghe.github.io/) is an influential scholar in the field of computer vision. His papers have received more than 500,000 citations as of 2023, according to [Google Scholar](https://scholar.google.com/citations?user=DhtAFkwAAAAJ&hl=en&oi=ao). His research on ResNets has become a fundamental building block of artificial intelligence systems today. Kaiming He has been a faculty member in the Department of EECS at MIT since 2024. Prior to this, he worked as a research scientist at Facebook from 2016. Before that, Kaiming He was a researcher at Microsoft starting from 2011. He obtained his PhD degree from the Chinese University of Hong Kong (CUHK), supervised by Xiaoou Tang. In this note, I will briefly introduce Kaiming He's PhD thesis, titled "[Single Image Haze Removal Using Dark Channel Prior](https://kaiminghe.github.io/publications/thesis.pdf)" [[1](#reference)], in order to learn about how to conduct influential research and write appealing papers.
 
 ## Summary of Thesis
 
 ---
 
-Kaiming He's thesis proposes a heuristic method for single-image haze removal problem. The key point is that He proposed an effective and simple prior, known as the dark channel prior, to impose additional contraints for solving haze removal equations. This prior is derived from He's observation of the statistics in haze-free images. It was found that most patches in these images contain pixels which are dark in at least one color channel. Additionally, the thesis also introduces efficient realization of the dark channel prior and demonstrates its close relation to human vision perception system.
+Kaiming He's thesis proposes a heuristic method for the single-image haze removal problem. The key point is that He proposed an effective and simple prior, known as the dark channel prior, to impose additional constraints for solving haze removal equations. This prior is derived from He's observation of the statistics in haze-free images. It was found that most patches in these images contain pixels that are dark in at least one color channel. Additionally, the thesis also introduces an efficient realization of the dark channel prior and demonstrates its close relation to the human vision perception system.
 
 ## Observations, Comments, and Interesting Facts
 
@@ -34,7 +34,7 @@ Here are some valuable observations and interesting facts about Kaiming He's the
 
 ---
 
-Kaiming He published 5 research papers during his PhD, and 4 of them are related to his thesis. These papers were published in between 2009 and 2011, with Kaiming He as the first author. All these papers are published in top-level academic conferences and journals, including CVPR (x3), TPAMI (x1), and ECCV (x1). Remarkably, his first paper, titled "[Single image haze removal using dark channel prior](https://doi.org/10.1109/TPAMI.2010.168)", receives CVPR best paper award in 2009 and has been cited for over 8,000 times as of 2023. These achievements highlight his academic asethetics in identifying infludential research topics.
+Kaiming He published five research papers during his PhD, with four of them being related to his thesis. These papers were published between 2009 and 2011, and Kaiming He was the first author on all of them. All of these papers were published in top-level academic conferences and journals, which include CVPR (x3), TPAMI (x1), and ECCV (x1). Remarkably, his first paper, titled "[Single image haze removal using dark channel prior](https://doi.org/10.1109/TPAMI.2010.168)", received the CVPR best paper award in 2009 and has been cited over 8,000 times as of 2023. These achievements highlight his academic aesthetics in identifying influential research topics.
 
 ## Reference
 
