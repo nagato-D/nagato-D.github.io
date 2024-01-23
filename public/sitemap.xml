@@ -2,8 +2,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://nagato-D.github.io/posts/note-resnet/</loc><lastmod>2024-01-23T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://nagato-D.github.io/posts/</loc><lastmod>2024-01-23T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://nagato-D.github.io/posts/note-kaiming-he/</loc><lastmod>2024-01-20T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://nagato-D.github.io/posts/tutorial-effective-index/</loc><lastmod>2023-12-27T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>https://nagato-D.github.io/posts/</loc><lastmod>2023-12-27T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://nagato-D.github.io/posts/tutorial-microring-resonator/</loc><lastmod>2023-12-19T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://nagato-D.github.io/posts/tutorial-pandoc/</loc><lastmod>2023-12-18T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>https://nagato-D.github.io/posts/tutorial-laser-noise/</loc><lastmod>2023-11-28T00:00:00&#43;00:00</lastmod></url><url>
             <loc>https://nagato-D.github.io/publications/</loc><lastmod>2023-11-10T21:21:00&#43;08:00</lastmod></url><url>
             <loc>https://nagato-D.github.io/patents/</loc><lastmod>2023-11-10T21:20:53&#43;08:00</lastmod></url><url>
             <loc>https://nagato-D.github.io/favorites/</loc><lastmod>2023-11-10T21:18:20&#43;08:00</lastmod></url><url>

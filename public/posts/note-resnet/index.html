@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Note on ResNet - Di Yu Homepage</title><meta name="Description" content="Di Yu&#39;s Homepage"><meta property="og:title" content="Note on ResNet" />
+<meta property="og:description" content="Introduction Deep convolutional neural networks are a powerful tool for image classification tasks. Deep networks are capable of capturing high-level features and can approximate complicated mappings with higher accuracy. For these reasons, deep neural networks may exhibit better performance than shallow ones in image recognition problems. However, training such deep learning models is difficult because the training accuracy usually degrades as the network depth increases (see Fig. 1). This problem of training accuracy hinders the demonstration of the full potential of deep neural networks, which could solve image recognition problems with higher accuracy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nagato-D.github.io/posts/note-resnet/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-23T00:00:00+00:00" /><meta property="og:site_name" content="Di Yu&#39;s Homepage" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Note on ResNet"/>
+<meta name="twitter:description" content="Introduction Deep convolutional neural networks are a powerful tool for image classification tasks. Deep networks are capable of capturing high-level features and can approximate complicated mappings with higher accuracy. For these reasons, deep neural networks may exhibit better performance than shallow ones in image recognition problems. However, training such deep learning models is difficult because the training accuracy usually degrades as the network depth increases (see Fig. 1). This problem of training accuracy hinders the demonstration of the full potential of deep neural networks, which could solve image recognition problems with higher accuracy."/>
+<meta name="application-name" content="Di Yu&#39;s Homepage">
+<meta name="apple-mobile-web-app-title" content="Di Yu&#39;s Homepage"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nagato-D.github.io/posts/note-resnet/" /><link rel="prev" href="https://nagato-D.github.io/posts/note-kaiming-he/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Note on ResNet",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nagato-D.github.io\/posts\/note-resnet\/"
+        },"genre": "posts","wordcount":  588 ,
+        "url": "https:\/\/nagato-D.github.io\/posts\/note-resnet\/","datePublished": "2024-01-23T00:00:00+00:00","dateModified": "2024-01-23T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Di Yu"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/publications/"> Publications </a><a class="menu-item" href="/patents/"> Patents </a><a class="menu-item" href="/favorites/"> Favorites </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/publications/" title="">Publications</a><a class="menu-item" href="/patents/" title="">Patents</a><a class="menu-item" href="/favorites/" title="">Favorites</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Note on ResNet</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Di Yu</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-01-23">2024-01-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;588 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#observations-comments-and-interesting-facts">Observations, Comments, and Interesting Facts</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="introduction">Introduction</h2>
+<hr>
+<p>Deep convolutional neural networks are a powerful tool for image classification tasks. Deep networks are capable of capturing high-level features and can approximate complicated mappings with higher accuracy. For these reasons, deep neural networks may exhibit better performance than shallow ones in image recognition problems. However, training such deep learning models is difficult because the training accuracy usually degrades as the network depth increases (see Fig. 1). This problem of training accuracy hinders the demonstration of the full potential of deep neural networks, which could solve image recognition problems with higher accuracy.</p>
+<figure><a class="lightgallery" href="/posts/note-ResNet/training_accuracy_vs_network_depth.jpg" title="/posts/note-ResNet/training_accuracy_vs_network_depth.jpg" data-thumbnail="/posts/note-ResNet/training_accuracy_vs_network_depth.jpg" data-sub-html="<h2>Training accuracy reduces with network depth [1]</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/note-ResNet/training_accuracy_vs_network_depth.jpg"
+            data-srcset="/posts/note-ResNet/training_accuracy_vs_network_depth.jpg, /posts/note-ResNet/training_accuracy_vs_network_depth.jpg 1.5x, /posts/note-ResNet/training_accuracy_vs_network_depth.jpg 2x"
+            data-sizes="auto"
+            alt="/posts/note-ResNet/training_accuracy_vs_network_depth.jpg" />
+    </a><figcaption class="image-caption">Training accuracy reduces with network depth [1]</figcaption>
+    </figure>
+<p>In 2016, Kaiming He published a paper titled &ldquo;Deep Residual Learning for Image Recognition&rdquo; [<a href="#reference" rel="">1</a>] with his colleagues at Microsoft. This paper was selected as the best paper at CVPR in that year. In this paper, Kaiming He proposed the residual learning framework (known as &lsquo;ResNet&rsquo;), a novel building block for deep neural networks that features significantly improved training accuracy. The basic idea is to introduce a shortcut connection (illustrated in Fig. 2), allowing information to flow and skip multiple nonlinear layers. This shortcut connection makes it easier for multiple stacked layers to approximate an identity mapping, which is key to training deep learning models.</p>
+<figure><a class="lightgallery" href="/posts/note-ResNet/schematic_ResNet.jpg" title="/posts/note-ResNet/schematic_ResNet.jpg" data-thumbnail="/posts/note-ResNet/schematic_ResNet.jpg" data-sub-html="<h2>Schematic for ResNet [1]</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/note-ResNet/schematic_ResNet.jpg"
+            data-srcset="/posts/note-ResNet/schematic_ResNet.jpg, /posts/note-ResNet/schematic_ResNet.jpg 1.5x, /posts/note-ResNet/schematic_ResNet.jpg 2x"
+            data-sizes="auto"
+            alt="/posts/note-ResNet/schematic_ResNet.jpg" />
+    </a><figcaption class="image-caption">Schematic for ResNet [1]</figcaption>
+    </figure>
+<p>ResNet has had a significant impact on machine learning research. The ResNet paper has garnered over 200,000 citations as of 2024, establishing itself as a fundamental building block in modern deep learning models. This includes its incorporation into large language models like GPT.</p>
+<h2 id="observations-comments-and-interesting-facts">Observations, Comments, and Interesting Facts</h2>
+<hr>
+<ul>
+<li>The idea of utilizing shortcut connections to reduce training error was inspired by the observation that nonlinear layers in deep neural networks perform worse than identity mapping. This results in a training error that accumulates as network depth increases, making deep models perform worse than shallow ones.</li>
+<li>While previous leading works utilized neural network models with a depth of 16 to 30, the ResNet architecture enables a depth of up to 152 layers.</li>
+<li>The extremely deep residual network performs surprisingly well in experiments; it won the 1st prize in multiple important competitions in 2015, including ILSVRC classification competition, ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation, demonstrating the effectiveness and generality of the ResNet architecture.</li>
+<li>Kaiming He realized that the solver is responsible for the reduction in training accuracy as network depth increases, instead of the model itself. Remarkably, he chose to modify the model to ease the optimization process by the solver, rather than altering the solver configuration.</li>
+<li>This choice might be motivated by the high cost of any modification to the solver, which has by that time become a cornerstone of common deep learning frameworks. In contrast, a transition between plain networks without shortcut connections to ResNet might be easier since ResNet can be optimized with a traditional solver using backpropagation, without entailing additional computational cost.</li>
+<li>One important reason for ResNet is that for deep neural network models, the optimal solution for each block is approximately an identity mapping, for which a ResNet can easily approximate by simply nullifying all parameters.</li>
+<li>When multiple ResNet blocks are stacked together, the shortcut connections form a series connection, allowing information to flow directly from input to output. It turns out that such long-range connections play an important role in finding the optimal solution when training a complicated deep learning model.</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<hr>
+<ul>
+<li>He, K., Zhang, X., Ren, S., &amp; Sun, J. (2016). Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-01-23</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/note-kaiming-he/" class="prev" rel="prev" title="Note on Kaiming He&#39;s PhD Thesis"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Note on Kaiming He's PhD Thesis</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

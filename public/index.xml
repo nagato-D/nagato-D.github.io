@@ -6,6 +6,22 @@
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 20 Oct 2023 22:57:03 &#43;0800</lastBuildDate>
             <atom:link href="https://nagato-D.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Note on ResNet</title>
+    <link>https://nagato-D.github.io/posts/note-resnet/</link>
+    <pubDate>Tue, 23 Jan 2024 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/note-resnet/</guid>
+    <description><![CDATA[Introduction Deep convolutional neural networks are a powerful tool for image classification tasks. Deep networks are capable of capturing high-level features and can approximate complicated mappings with higher accuracy. For these reasons, deep neural networks may exhibit better performance than shallow ones in image recognition problems. However, training such deep learning models is difficult because the training accuracy usually degrades as the network depth increases (see Fig. 1). This problem of training accuracy hinders the demonstration of the full potential of deep neural networks, which could solve image recognition problems with higher accuracy.]]></description>
+</item>
+<item>
+    <title>Note on Kaiming He&#39;s PhD Thesis</title>
+    <link>https://nagato-D.github.io/posts/note-kaiming-he/</link>
+    <pubDate>Sat, 20 Jan 2024 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/note-kaiming-he/</guid>
+    <description><![CDATA[Introduction Kaiming He is an influential scholar in the field of computer vision. His papers have received more than 500,000 citations as of 2023, according to Google Scholar. His research on ResNets has established a fundamental building block in modern deep learning models. Kaiming He has been a faculty member in the Department of EECS at MIT since 2024. Prior to this, he worked as a research scientist at Facebook from 2016.]]></description>
+</item>
+<item>
     <title>Note on Effective Index</title>
     <link>https://nagato-D.github.io/posts/tutorial-effective-index/</link>
     <pubDate>Wed, 27 Dec 2023 00:00:00 &#43;0000</pubDate>
@@ -14,6 +30,32 @@
     <description><![CDATA[Introduction When light travels through a waveguide, its phase undergoes periodic changes as it moves along. The effective index is a measure of how frequently these phase changes occur compared to the wavelength of light in free space, but with the same frequency. Mathematically, the effective index, denoted as $n_{\rm eff}$, is defined as [1]:
 $$ n_{\rm eff} = \frac{\lambda}{2\pi}\beta = \frac{\beta}{k}, $$
 where $\beta$ represents the propagation constant of a specific mode in the waveguide.]]></description>
+</item>
+<item>
+    <title>Note on Microring Resonator</title>
+    <link>https://nagato-D.github.io/posts/tutorial-microring-resonator/</link>
+    <pubDate>Tue, 19 Dec 2023 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/tutorial-microring-resonator/</guid>
+    <description><![CDATA[Introduction In integrated photonics, resonators are usually formed by looped waveguides known as &lsquo;ring resonators.&rsquo; Ring resonators offer favorable compactness and highly wavelength-selective transmission characteristics. For these reasons, ring resonators have become fundamental building blocks in integrated photonics, particularly in applications such as filters, sensors, and modulators, to name a few [1]. In this note, we will introduce the basic properties of ring resonators and briefly discuss their connection to materials and the fabrication process.]]></description>
+</item>
+<item>
+    <title>Note on Pandoc Usage - Convert Markdown to TeX/PDF</title>
+    <link>https://nagato-D.github.io/posts/tutorial-pandoc/</link>
+    <pubDate>Mon, 18 Dec 2023 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/tutorial-pandoc/</guid>
+    <description><![CDATA[Introduction Pandoc is a versatile tool that simplifies the conversion of markdown files to different formats such as LaTeX, PDF, DOCX, and HTML. By utilizing Pandoc, we can conveniently write our documents in markdown and effortlessly convert them to the desired output format. This approach greatly streamlines the writing and organization of documents, making it more convenient than directly writing the manuscript in LaTeX or HTML.
+Installation Download TeX Live ISO and install.]]></description>
+</item>
+<item>
+    <title>Note on Laser Noise</title>
+    <link>https://nagato-D.github.io/posts/tutorial-laser-noise/</link>
+    <pubDate>Tue, 28 Nov 2023 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/tutorial-laser-noise/</guid>
+    <description><![CDATA[Basic Concepts Fourier transform Given a signal $x(t)$, its Fourier transform is $$ \hat{x}(f) = \int_{-\infty}^{\infty}\exp(-i2\pi ft)x(t)dt. \tag{1} $$
+Power spectral density (spectral line shape) The power spectral density of a signal describes the distribution of power into frequency components. The calculation of power spectral should involve the calculation of Fourier transform. However, for a signal associated with a stationary process, its Fourier transform may diverge. Having said that, we can still define the power spectral density of a stationary-process signal.]]></description>
 </item>
 <item>
     <title>Note on Deploying a Personal Website on Github</title>
