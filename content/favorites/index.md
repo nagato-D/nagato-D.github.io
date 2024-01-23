@@ -17,6 +17,6 @@ draft = false
 + [魔法少女小圆](https://www.bilibili.com/bangumi/play/ss2539)
 + 无职转生
 
-## Gallary
+## Gallery
 
 ![长门有希](/favorites/nagato_yuki.jpg)
