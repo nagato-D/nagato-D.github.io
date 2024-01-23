@@ -25,7 +25,7 @@ In 2016, Kaiming He published a paper titled "Deep Residual Learning for Image R
 
 **Fig. 2** Schematic for ResNet [[1](#reference)]
 
-ResNet has had a significant impact on machine learning research. The ResNet paper has garnered over 200,000 citations as of 2024, establishing itself as a fundamental building block in modern deep learning models. This includes its incorporation into large language models like GPT.
+ResNet has had a significant impact on machine learning research. The ResNet paper has garnered over 200,000 citations as of 2024. Nowdays, ResNet has become a fundamental building block in modern deep learning model, including state-of-the-art large language models like GPT.
 
 ## Observations, Comments, and Interesting Facts
 
