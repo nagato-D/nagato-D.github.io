@@ -15,11 +15,11 @@ draft = false
 
 Deep convolutional neural networks are a powerful tool for image classification tasks. Deep networks are capable of capturing high-level features and can approximate complicated mappings with higher accuracy. For these reasons, deep neural networks may exhibit better performance than shallow ones in image recognition problems. However, training such deep learning models is difficult because the training accuracy usually degrades as the network depth increases (see Fig. 1). This problem of training accuracy hinders the demonstration of the full potential of deep neural networks, which could solve image recognition problems with higher accuracy.
 
-{{<image src="/posts/note-ResNet/training_accuracy_vs_network_depth.jpg" caption="Fig. 1 Training accuracy reduces with network depth [[1](#reference)]">}}
+{{< image src="/posts/note-ResNet/training_accuracy_vs_network_depth.jpg" caption="Fig. 1 Training accuracy reduces with network depth [[1](#reference)]" >}}
 
 In 2016, Kaiming He published a paper titled "Deep Residual Learning for Image Recognition" [[1](#reference)] with his colleagues at Microsoft. This paper was selected as the best paper at CVPR in that year. In this paper, Kaiming He proposed the residual learning framework (known as 'ResNet'), a novel building block for deep neural networks that features significantly improved training accuracy. The basic idea is to introduce a shortcut connection (illustrated in Fig. 2), allowing information to flow and skip multiple nonlinear layers. This shortcut connection makes it easier for multiple stacked layers to approximate an identity mapping, which is key to training deep learning models.
 
-{{<image src="/posts/note-ResNet/schematic_ResNet.jpg" caption="Fig. 2 Schematic for ResNet [[1](#reference)]">}}
+{{< image src="/posts/note-ResNet/schematic_ResNet.jpg" caption="Fig. 2 Schematic for ResNet [[1](#reference)]" >}}
 
 ResNet has had a significant impact on machine learning research. The ResNet paper has garnered over 200,000 citations as of 2024, establishing itself as a fundamental building block in modern deep learning models. This includes its incorporation into large language models like GPT.
 
