@@ -68,7 +68,7 @@ $$
 ### Noise sources
 Laser output typically stems from two main sources: white noise and flicker (1/f) noise, as detailed in [3](#references). White noise is a result of spontaneous emission, while flicker noise arises from fluctuations in various sources like the laser cavity and driver circuit. In terms of frequency noise power spectral density, white noise appears as a horizontal level, while flicker noise is evident as a 1/f section located on the low-frequency side.
 
-{{< image src="/posts/note-laser-noise/typical_frequency_noise_PSD.png" caption="Typical frequency noise power spectral density" >}}
+{{< image src="/notes/note-laser-noise/typical_frequency_noise_PSD.png" caption="Typical frequency noise power spectral density" >}}
 
 Usually, people presents the so-called **fundamental/inherent/Schawlow-Townes/quantum-noise-limited Lorentzian linewidth** in literature [4](#references), which is simply $\pi$ times the white noise intensity. This linewidth should be distinguished from the FWHM of the spectral lineshape. The FWHM of the spectral lineshape is defined as integrated linewidth, which takes into account both the white noise (quantum noise) and 1/f noise (electric noise) and is thus always larger than the fundamental noise.
 
