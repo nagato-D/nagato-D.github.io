@@ -37,7 +37,7 @@ where $v = ka\sqrt{n_{1}^{2}-n_{s}^{2}}$ and $b = (n_{\rm eff}^{2} - n_{s}^{2})/
 
 Here, we present the dispersion curves for the first TE mode in a slab waveguide. The waveguide consists of a 220-nanometer-thick silicon layer at the center, with silicon dioxide layers positioned above and below it.
 
-{{< image src="/posts/note-effective-index/slab_waveguide_dispersion.png" caption="Effective index of TE modes in a 220-nm-thickness silicon layer surrounded by silicon dioxide" >}}
+{{< image src="/notes/note-effective-index/slab_waveguide_dispersion.png" caption="Effective index of TE modes in a 220-nm-thickness silicon layer surrounded by silicon dioxide" >}}
 
 ## Code
 

@@ -44,12 +44,20 @@ theme = 'LoveIt'
     title = ""
   [[menu.main]]
     weight = 4
-    identifier = "favorites"
+    identifier = "notes"
     pre = ""
     post = ""
-    name = "Favorites"
-    url = "/favorites/"
+    name = "Notes"
+    url = "/notes/"
     title = ""
+  [[menu.main]]
+  weight = 5
+  identifier = "favorites"
+  pre = ""
+  post = ""
+  name = "Favorites"
+  url = "/favorites/"
+  title = ""
 
 [params]
   # site default theme ["auto", "light", "dark"]

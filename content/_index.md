@@ -28,4 +28,4 @@ Integrated optoelectronics, condensed matter physics, quantum computation
 
 ## News
 ---
-- 2024.01, our work [Impact of transforming interface geometry on edge states in valley photonic crystals](https://arxiv.org/abs/2310.00858) was accepted by **Physical Review Letters**.
+- 2024.01, our work [Impact of transforming interface geometry on edge states in valley photonic crystals](https://arxiv.org/abs/2310.00858) was accepted by **Physical Review Letters**. This paper establishes limitations of topological protection in valley photonic crystals
