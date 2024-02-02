@@ -19,9 +19,7 @@ The attention mechanism was first proposed in [[1](#reference)] by Bahdanau, D. 
 
 The RNN Encoder-Decoder model consists of two RNNs serving as the encoder and the decoder, respectively. The encoder RNN maps input words $x_{j}$ to a series of hidden states $h_{j}$ ($j = 1, 2, ..., T_{x}$). Then, these hidden states are used to determine a context vector $c_{i}$ for predicting the $i$-th target word. That is to say, the decoder RNN uses its last hidden state $s_{i-1}$, last target word $y_{i-1}$, and the current context vector $c_{i}$ as input for predicting the $i$-th target word.
 
-
-{{< image src="/notes/note-attention-mechanism/diagram_attention_mechanism.png" width="200" >}}
-
+{{< image src="/posts/note-attention-mechanism/diagram_attention_mechanism.png" width=200 >}}
 
 **Fig. 1** Diagram of attention mechanism in an RNN encoder-decoder architecture [[1](#reference)]
 

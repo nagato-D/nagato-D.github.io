@@ -43,15 +43,7 @@ theme = 'LoveIt'
     url = "/patents/"
     title = ""
   [[menu.main]]
-    weight = 4
-    identifier = "notes"
-    pre = ""
-    post = ""
-    name = "Notes"
-    url = "/notes/"
-    title = ""
-  [[menu.main]]
-  weight = 5
+  weight = 4
   identifier = "favorites"
   pre = ""
   post = ""
