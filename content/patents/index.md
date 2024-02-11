@@ -8,7 +8,7 @@ draft = false
 ---
 ## 2023
 
-{{< admonition note "Method, apparatus, and electronic device for quantum circuit mapping" >}}
+{{< admonition note "Quantum circuit mapping method and device and electronic equipment" >}}
 量子电路映射方法、装置及电子设备
 
 Kun Fang, **Di Yu**
@@ -16,7 +16,7 @@ Kun Fang, **Di Yu**
 :(fa-solid fa-link): [CN117436537A](https://patents.google.com/patent/CN117436537A/en?oq=CN117436537A)
 {{< /admonition >}}
 
-{{< admonition note "Method, apparatus, and electronic device for quantum circuit mapping" >}}
+{{< admonition note "Quantum circuit mapping method and device and electronic equipment" >}}
 量子电路映射方法、装置及电子设备
 
 Kun Fang, **Di Yu**
@@ -25,7 +25,7 @@ Kun Fang, **Di Yu**
 {{< /admonition >}}
 
 
-{{< admonition note "Method, apparatus, and electronic device for quantum circuit mapping" >}}
+{{< admonition note "Quantum circuit mapping method and device and electronic equipment" >}}
 量子电路映射方法、装置及电子设备
 
 Kun Fang, **Di Yu**
