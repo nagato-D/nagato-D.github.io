@@ -3,13 +3,54 @@
         <title>All Posts - Di Yu Homepage</title>
         <link>https://nagato-D.github.io/posts/</link>
         <description>All Posts | Di Yu Homepage</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 23 Jan 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://nagato-D.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Feb 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://nagato-D.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Note on Premier Academic Conferences on Optical Communication</title>
+    <link>https://nagato-D.github.io/posts/note-optical-comm-conferences/</link>
+    <pubDate>Sat, 17 Feb 2024 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/note-optical-comm-conferences/</guid>
+    <description><![CDATA[Summary In the field of optical communication, there are three widely recognized premier academic conferences. They are the Optical Fiber Conference (OFC), European Conference on Optical Communications (ECOC), and Conference on Lasers and Electro-Optics (CLEO).
+Optical Fiber Conference (OFC) Homepage: https://www.ofcconference.org/en-us/home/ Date: Every year in Mar. Duration: 5 days Location: Usually California, U.S. OFC is the premier international academic conference on optical communications and networks. The first OFC was held in 1975, and this conference was mostly held in California [1].]]></description>
+</item>
+<item>
+    <title>Note on Transformer: Attention Is All You Need</title>
+    <link>https://nagato-D.github.io/posts/note-transformer/</link>
+    <pubDate>Tue, 13 Feb 2024 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/note-transformer/</guid>
+    <description><![CDATA[Introduction The Transformer is a machine learning model for sequence transduction, featuring high prediction accuracy, low computational complexity, and high computation parallelization. This model is the building block of modern large language models like GPT-3, which is conceived as a competitive candidate for realizing artificial general intelligence (AGI). The Transformer was firstly proposed in NIPS 2017 by a research group at Google. The associated paper titled &ldquo;Attention Is All You Need&rdquo; [1] has been cited for over 100,000 times as of 2024, demonstrating the huge impact of the Transformer on NLP studies.]]></description>
+</item>
+<item>
+    <title>Note on GDS File</title>
+    <link>https://nagato-D.github.io/posts/note-gds/</link>
+    <pubDate>Wed, 07 Feb 2024 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/note-gds/</guid>
+    <description><![CDATA[Introduction GDSII is a database file format (filename extension .gds) which is used for storing and transferring design layout of integrated circuits. A GDS file contains a series of planar geometries, each of them is assigned with a layer index. These geometries define the shape of devices, and the corresponding layer indices specify the order in which these devices should be fabricated. The GDS format is widely used in nanofabrication, especially for optical lithography, where one needs to upload a gds file as input design file to a lithography system to obtain desired patterns on wafers.]]></description>
+</item>
+<item>
+    <title>Note on Attention Mechanism</title>
+    <link>https://nagato-D.github.io/posts/note-attention-mechanism/</link>
+    <pubDate>Thu, 01 Feb 2024 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/note-attention-mechanism/</guid>
+    <description><![CDATA[Introduction Attention mechanism is one fundamental building component in modern natural language processing systems like Transformer and GPT-3. These systems employ the encoder-decoder architecture, where the encoder maps input sentences to a fixed-length vector, which is then transformed to output sentences by the decoder. This architecture suffers from performance degradation when it comes to long input sentences. Fortunately, this issue can be effectively mitigated by employing the attention mechanism, which identifies the relevant part of the input sentence for the encoder to map, making the problematic mapping from the whole input sentence to a fixed-length vector unnecessary.]]></description>
+</item>
+<item>
+    <title>Limitations of Topological Protection in Valley Photonic Crystals</title>
+    <link>https://nagato-D.github.io/posts/post-valley-phc/</link>
+    <pubDate>Tue, 30 Jan 2024 00:00:00 &#43;0000</pubDate>
+    <author>Di Yu</author>
+    <guid>https://nagato-D.github.io/posts/post-valley-phc/</guid>
+    <description><![CDATA[NoteThis post introduces our recent work accepted by Physical Review Letters.Introduction Topological optics is a research field that investigates the properties of nanophotonic materials with topologically nontrivial band structures. This field has raised people&rsquo;s interests in recent years for its potential in developing low-loss optical waveguides and in studying fundamental condensed matter physics. Valley photonic crystals (VPCs) are particularly interesting among numerous proposals of topologically nontrivial photonic materials.]]></description>
+</item>
+<item>
     <title>Note on ResNet</title>
     <link>https://nagato-D.github.io/posts/note-resnet/</link>
     <pubDate>Tue, 23 Jan 2024 00:00:00 &#43;0000</pubDate>
     <author>Di Yu</author>
     <guid>https://nagato-D.github.io/posts/note-resnet/</guid>
-    <description><![CDATA[Introduction Deep convolutional neural networks are a powerful tool for image classification tasks. Deep networks are capable of capturing high-level features and can approximate complicated mappings with higher accuracy. For these reasons, deep neural networks may exhibit better performance than shallow ones in image recognition problems. However, training such deep learning models is difficult because the training accuracy usually degrades as the network depth increases (see Fig. 1). This problem of training accuracy hinders the demonstration of the full potential of deep neural networks, which could solve image recognition problems with higher accuracy.]]></description>
+    <description><![CDATA[Introduction Deep convolutional neural networks are a powerful tool for image classification tasks. Deep networks are capable of capturing high-level features and can approximate complicated mappings with higher accuracy. For these reasons, deep neural networks may exhibit better performance than shallow ones in image recognition problems. However, training such deep learning models is difficult because the training accuracy usually degrades as the network depth increases (see Fig. 1). This problem of training accuracy hinders applications of deep neural networks, which could solve image recognition problems with higher accuracy.]]></description>
 </item>
 <item>
     <title>Note on Kaiming He&#39;s PhD Thesis</title>
@@ -21,47 +62,30 @@
 </item>
 <item>
     <title>Note on Effective Index</title>
-    <link>https://nagato-D.github.io/posts/tutorial-effective-index/</link>
+    <link>https://nagato-D.github.io/posts/note-effective-index/</link>
     <pubDate>Wed, 27 Dec 2023 00:00:00 &#43;0000</pubDate>
     <author>Di Yu</author>
-    <guid>https://nagato-D.github.io/posts/tutorial-effective-index/</guid>
+    <guid>https://nagato-D.github.io/posts/note-effective-index/</guid>
     <description><![CDATA[Introduction When light travels through a waveguide, its phase undergoes periodic changes as it moves along. The effective index is a measure of how frequently these phase changes occur compared to the wavelength of light in free space, but with the same frequency. Mathematically, the effective index, denoted as $n_{\rm eff}$, is defined as [1]:
 $$ n_{\rm eff} = \frac{\lambda}{2\pi}\beta = \frac{\beta}{k}, $$
 where $\beta$ represents the propagation constant of a specific mode in the waveguide.]]></description>
 </item>
 <item>
     <title>Note on Microring Resonator</title>
-    <link>https://nagato-D.github.io/posts/tutorial-microring-resonator/</link>
+    <link>https://nagato-D.github.io/posts/note-microring-resonator/</link>
     <pubDate>Tue, 19 Dec 2023 00:00:00 &#43;0000</pubDate>
     <author>Di Yu</author>
-    <guid>https://nagato-D.github.io/posts/tutorial-microring-resonator/</guid>
+    <guid>https://nagato-D.github.io/posts/note-microring-resonator/</guid>
     <description><![CDATA[Introduction In integrated photonics, resonators are usually formed by looped waveguides known as &lsquo;ring resonators.&rsquo; Ring resonators offer favorable compactness and highly wavelength-selective transmission characteristics. For these reasons, ring resonators have become fundamental building blocks in integrated photonics, particularly in applications such as filters, sensors, and modulators, to name a few [1]. In this note, we will introduce the basic properties of ring resonators and briefly discuss their connection to materials and the fabrication process.]]></description>
 </item>
 <item>
     <title>Note on Pandoc Usage - Convert Markdown to TeX/PDF</title>
-    <link>https://nagato-D.github.io/posts/tutorial-pandoc/</link>
+    <link>https://nagato-D.github.io/posts/note-pandoc/</link>
     <pubDate>Mon, 18 Dec 2023 00:00:00 &#43;0000</pubDate>
     <author>Di Yu</author>
-    <guid>https://nagato-D.github.io/posts/tutorial-pandoc/</guid>
+    <guid>https://nagato-D.github.io/posts/note-pandoc/</guid>
     <description><![CDATA[Introduction Pandoc is a versatile tool that simplifies the conversion of markdown files to different formats such as LaTeX, PDF, DOCX, and HTML. By utilizing Pandoc, we can conveniently write our documents in markdown and effortlessly convert them to the desired output format. This approach greatly streamlines the writing and organization of documents, making it more convenient than directly writing the manuscript in LaTeX or HTML.
 Installation Download TeX Live ISO and install.]]></description>
-</item>
-<item>
-    <title>Note on Laser Noise</title>
-    <link>https://nagato-D.github.io/posts/tutorial-laser-noise/</link>
-    <pubDate>Tue, 28 Nov 2023 00:00:00 &#43;0000</pubDate>
-    <author>Di Yu</author>
-    <guid>https://nagato-D.github.io/posts/tutorial-laser-noise/</guid>
-    <description><![CDATA[Basic Concepts Fourier transform Given a signal $x(t)$, its Fourier transform is $$ \hat{x}(f) = \int_{-\infty}^{\infty}\exp(-i2\pi ft)x(t)dt. \tag{1} $$
-Power spectral density (spectral line shape) The power spectral density of a signal describes the distribution of power into frequency components. The calculation of power spectral should involve the calculation of Fourier transform. However, for a signal associated with a stationary process, its Fourier transform may diverge. Having said that, we can still define the power spectral density of a stationary-process signal.]]></description>
-</item>
-<item>
-    <title>Note on Deploying a Personal Website on Github</title>
-    <link>https://nagato-D.github.io/posts/tutorial-deploy-personal-website/</link>
-    <pubDate>Sun, 15 Oct 2023 00:00:00 &#43;0000</pubDate>
-    <author>Di Yu</author>
-    <guid>https://nagato-D.github.io/posts/tutorial-deploy-personal-website/</guid>
-    <description><![CDATA[Create a Markdown File Write note with Markdown. Convert the Markdown File to a Local Website Install hugo and configure the website folder Install Hugo following the guidance. Install powershell. Open powershell and change the directory to the location you want to place the website files by running cd &lt;loc&gt;. Create a new site using Hugo by running hugo new site &lt;site_name&gt; in powershell. Edit the hugo.toml file, leaving baseURL empty for now.]]></description>
 </item>
 </channel>
 </rss>
