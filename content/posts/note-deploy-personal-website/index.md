@@ -7,6 +7,10 @@ draft = false
 
 <!-- **Author:** Di Yu (email: yudi.0211@foxmail.com) -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-deploy-personal-website/Note_deploy_website.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Create a Markdown File
 ---
 1. Write note with [Markdown](https://en.wikipedia.org/wiki/Markdown).

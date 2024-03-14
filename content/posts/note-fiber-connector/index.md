@@ -9,6 +9,10 @@ draft = false
 **Created on** 2024-3-14\
 **Author** Di Yu (yudi.0211@foxmail.com) -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-fiber-connector/Note_fiber_connectors.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## FC Connector
 
 ---

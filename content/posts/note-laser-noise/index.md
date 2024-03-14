@@ -9,6 +9,10 @@ draft = false
 Created on 2023-11-28
 Author Di Yu -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-laser-noise/Note_laser_noise.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Basic Concepts
 ---
 ### Fourier transform

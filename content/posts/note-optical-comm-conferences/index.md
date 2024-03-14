@@ -9,6 +9,10 @@ draft = false
 **Created on** 2024-2-17\
 **Author** Di Yu (yudi.0211@foxmail.com) -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-optic-comm-conferences/Note_optical_comm_conferences.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Summary
 
 ---

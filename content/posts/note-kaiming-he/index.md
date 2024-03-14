@@ -5,6 +5,10 @@ date = 2024-01-20
 draft = false
 +++
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-kaiming-he/Note_Kaiming_He.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Introduction
 
 ---

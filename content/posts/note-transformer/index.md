@@ -9,6 +9,10 @@ draft = false
 **Created on** 2024-2-12\
 **Author** Di Yu (yudi.0211@foxmail.com) -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-transformer/Note_transformer.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Introduction
 
 ---

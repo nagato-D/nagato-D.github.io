@@ -5,8 +5,12 @@ date = 2024-01-30
 draft = false
 +++
 
-{{< admonition type=note title="Note" open=false >}}
+<!-- {{< admonition type=note title="Note" open=false >}}
 This post introduces our [recent work](https://arxiv.org/abs/2310.00858) accepted by *Physical Review Letters*.
+{{< /admonition >}} -->
+
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/post-valley-PhC/Note_VPC_paper.pdf) for a PDF version of this note.
 {{< /admonition >}}
 
 ## Introduction

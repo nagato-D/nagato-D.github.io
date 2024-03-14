@@ -9,6 +9,10 @@ draft = false
 **Created on** 2023-12-27\
 **Author** Di Yu -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-effective-index/Note_effective_index.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Introduction
 
 ---

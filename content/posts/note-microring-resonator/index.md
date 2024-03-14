@@ -9,6 +9,10 @@ draft = false
 **Created on** 2023-12-19\
 **Author** Di Yu (yudi.0211@foxmail.com) -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-microring-resonator/Note_ring_resonator.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Introduction
 
 ---

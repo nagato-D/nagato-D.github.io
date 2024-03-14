@@ -9,6 +9,10 @@ draft = false
 **Created on** 2024-2-7\
 **Author** Di Yu -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-gds/Note_gds_file.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Introduction
 
 ---

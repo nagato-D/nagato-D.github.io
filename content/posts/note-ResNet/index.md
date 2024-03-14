@@ -9,6 +9,10 @@ draft = false
 **Created on** 2024-1-23\
 **Author** Di Yu (yudi.0211@foxmail.com) -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-ResNet/Note_ResNet.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Introduction
 
 ---

@@ -9,6 +9,10 @@ draft = false
 **Created on** 2023-12-18\
 **Author** Di Yu (yudi.0211@foxmail.com) -->
 
+{{< admonition type=note title="PDF version" open=false >}}
+Please refer to [here](/posts/note-pandoc/Note_pandoc_usage.pdf) for a PDF version of this note.
+{{< /admonition >}}
+
 ## Introduction
 
 ---
