@@ -27,7 +27,7 @@ Hello &#x1F44B; 米娜桑，最近过得还好吗 ^_^
 
 ![](https://bkimg.cdn.bcebos.com/pic/024f78f0f736afc379313eea1841fcc4b74542a9b4be?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080)
 
-锐评: 本季度另一部制作水平位列 Tier 0 的作品。虽然很多人说此作剧情太 "典"，但黄金厕纸也是黄金 (暴论)
+锐评: 本季度另一部制作水平位列 Tier 0 的作品。虽然很多人说此作剧情太 "典"，但黄金厕纸也是黄金 (暴论)git
 
 ### [身为 VTuber 的我因为忘记关台而成了传说](https://anime.girigirilove.com/GV25999/)
 
