@@ -8,7 +8,7 @@ draft = false
 ---
 
 ## 动漫推荐
-- [凉宫春日的犹豫](https://www.bilibili.com/bangumi/play/ss1057)
+- [凉宫春日的忧郁](https://www.bilibili.com/bangumi/play/ss1057)
 - [Fate/stay night UBW](https://www.bilibili.com/bangumi/media/md1586)
 - [魔法少女小圆](https://www.bilibili.com/bangumi/play/ss2539)
 - [无职转生](https://www.bilibili.com/video/BV1ho4y1o7Yw/)
