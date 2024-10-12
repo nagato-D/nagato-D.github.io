@@ -31,3 +31,5 @@ Integrated optoelectronics, condensed matter physics, quantum computation -->
 - 2024.07, our work [Symmetry-Based Quantum Circuit Mapping
 ](https://arxiv.org/abs/2310.18026) was accepted by **Physical Review Applied**. This paper proposes an efficient algorithm of quantum circuit mapping by utilizing symmetries inherent in quantum hardware.
 - 2024.01, our work [Impact of transforming interface geometry on edge states in valley photonic crystals](https://arxiv.org/abs/2310.00858) was accepted by **Physical Review Letters**. This paper establishes limitations of topological protection in valley photonic crystals.
+
+![](https://www.easycounter.com/counter.php?nagato) unique visitors since Oct. 2024
