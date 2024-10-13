@@ -6,7 +6,9 @@ draft = false
 
 ## Biography
 ---
-I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) at the University of Hong Kong, advised by Prof. [Chao Xiang](https://chao-xiang.github.io/). Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Prof. [Kobus Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the Yingcai Honor College of University of Electronic Science and Technology of China in 2021. My full CV is available [here](/CV/CV_EN.pdf).
+I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) at the University of Hong Kong, advised by Prof. [Chao Xiang](https://chao-xiang.github.io/). Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Prof. [Kobus Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the Yingcai Honor College of University of Electronic Science and Technology of China in 2021.
+
+<!-- My full CV is available [here](/CV/CV_EN.pdf). -->
 
 ## Education
 ---
