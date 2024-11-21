@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Note on Laser Noise - Di Yu Homepage</title><meta name="Description" content="Di Yu&#39;s Homepage"><meta property="og:title" content="Note on Laser Noise" />
+<meta property="og:description" content="PDF versionPlease refer to here for a PDF version of this note.Basic Concepts Fourier transform Given a signal $x(t)$, its Fourier transform is $$ \hat{x}(f) = \int_{-\infty}^{\infty}\exp(-i2\pi ft)x(t)dt. \tag{1} $$
+Power spectral density (spectral line shape) The power spectral density of a signal describes the distribution of power into frequency components. The calculation of power spectral should involve the calculation of Fourier transform. However, for a signal associated with a stationary process, its Fourier transform may diverge." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nagato-D.github.io/posts_content/note-laser-noise/" /><meta property="article:section" content="posts_content" />
+<meta property="article:published_time" content="2023-11-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-28T00:00:00+00:00" /><meta property="og:site_name" content="Di Yu&#39;s Homepage" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Note on Laser Noise"/>
+<meta name="twitter:description" content="PDF versionPlease refer to here for a PDF version of this note.Basic Concepts Fourier transform Given a signal $x(t)$, its Fourier transform is $$ \hat{x}(f) = \int_{-\infty}^{\infty}\exp(-i2\pi ft)x(t)dt. \tag{1} $$
+Power spectral density (spectral line shape) The power spectral density of a signal describes the distribution of power into frequency components. The calculation of power spectral should involve the calculation of Fourier transform. However, for a signal associated with a stationary process, its Fourier transform may diverge."/>
+<meta name="application-name" content="Di Yu&#39;s Homepage">
+<meta name="apple-mobile-web-app-title" content="Di Yu&#39;s Homepage"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nagato-D.github.io/posts_content/note-laser-noise/" /><link rel="prev" href="https://nagato-D.github.io/posts_content/note-deploy-personal-website/" /><link rel="next" href="https://nagato-D.github.io/posts_content/note-pandoc/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Note on Laser Noise",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nagato-D.github.io\/posts_content\/note-laser-noise\/"
+        },"genre": "posts_content","wordcount":  678 ,
+        "url": "https:\/\/nagato-D.github.io\/posts_content\/note-laser-noise\/","datePublished": "2023-11-28T00:00:00+00:00","dateModified": "2023-11-28T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Di Yu"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/publications/"> Publications </a><a class="menu-item" href="/patents/"> Patents </a><a class="menu-item" href="/favorites/"> Favorites </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/publications/" title="">Publications</a><a class="menu-item" href="/patents/" title="">Patents</a><a class="menu-item" href="/favorites/" title="">Favorites</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Note on Laser Noise</h1><div class="content" id="content"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="details admonition note">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>PDF version<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Please refer to <a href="/posts/note-laser-noise/Note_laser_noise.pdf" rel="">here</a> for a PDF version of this note.</div>
+        </div>
+    </div>
+<h2 id="basic-concepts">Basic Concepts</h2>
+<hr>
+<h3 id="fourier-transform">Fourier transform</h3>
+<p>Given a signal $x(t)$, its Fourier transform is
+$$
+\hat{x}(f) = \int_{-\infty}^{\infty}\exp(-i2\pi ft)x(t)dt.  \tag{1}
+$$</p>
+<h3 id="power-spectral-density-spectral-line-shape">Power spectral density (spectral line shape)</h3>
+<p>The power spectral density of a signal describes the distribution of power into frequency components. The calculation of power spectral should involve the calculation of Fourier transform. However, for a signal associated with a stationary process, its Fourier transform may diverge. Having said that, we can still define the power spectral density of a stationary-process signal.</p>
+<p>The average power of singal $x(t)$ is
+$$
+P = \lim_{T\rightarrow\infty}\frac{1}{T}\int_{t_{0}-T/2}^{t_{0}+T/2}|x(t)|^{2}dt,
+$$
+where $t_{0}$ is an arbitrary time. We can write this expression of signal power in an alternative way. Let $x_{T}(t) = x(t)\omega_{T}(t)$, where $\omega_{T}(t)$ is unity within the length-T time frame and zero elsewhere. Then
+$$
+P = \lim_{T\rightarrow\infty}\frac{1}{T}\int_{-\infty}^{\infty}|x_{T}(t)|^{2}dt.
+$$</p>
+<p>Parseval&rsquo;s theorem tells us that</p>
+<p>$$
+P = \lim_{T\rightarrow\infty}\frac{1}{T}\int_{-\infty}^{\infty}|\hat{x}_{T}(f)|^{2}df
+$$</p>
+<p>$$
+= \int_{-\infty}^{\infty}\lim_{T\rightarrow\infty}\frac{1}{T}|\hat{x}_{T}(f)|^{2}df.
+$$</p>
+<p>Then the power spectral density is simply defined as the integrad above (see <a href="#references" rel="">1</a>).
+$$
+S_{xx}(f) = \lim_{T\rightarrow\infty}\frac{1}{T}|\hat{x}_{T}(f)|^{2}.  \tag{2}
+$$</p>
+<h3 id="phase-noise">Phase noise</h3>
+<p>Here we focus on a specific type of signal - the laser output. A real laser must suffer from instaneous phase fluctuation $\delta\phi(t)$. The phase noise is commonly represented by its power spectral density, denoted as $S_{\phi}(f)$.</p>
+<h3 id="frequency-noise">Frequency noise</h3>
+<p>When a laser has a fluctuation phase, its frequency will become unstable and fluctuate accordingly. The frequency fluctuation is
+$$
+\delta\nu(t) = \frac{1}{2\pi}\frac{d\phi}{dt}.
+$$</p>
+<p>In fact, phase noise and frequency noise are esentially referring to the same thing, i.e., the instantaneous phase fluctuation of laser. The frequency noise is usually characterized by its power spectral density, denoted as $S_{\nu}(f)$. There is a simple relation between $S_{\phi}(f)$ and $S_{\nu}(f)$ (see <a href="#references" rel="">2</a>):
+$$
+S_{\phi}(f) = \frac{S_{\nu}(f)}{f^{2}}.  \tag{3}
+$$</p>
+<p>As a consequence of the phase fluctuation, the power spectral density of the laser will deviate from an ideal delta function. Instead, it will manifest as a spectral line with a finite width. The full width half maximum (FWHM) of this spectral line is defined as the linewidth of the laser.</p>
+<p>There is a simple relation between the laser linewidth $\Delta\nu_{\rm int}$,  frequency noise power spectral density $S_{\nu}(f)$, and phase noise power spectral density $S_{\phi}(f)$ (see <a href="#references" rel="">2</a>):
+$$
+\int_{\Delta\nu_{\rm int}}^{\infty}S_{\phi}(f)df = \int_{\Delta\nu_{\rm int}}^{\infty}\frac{S_{\nu}(f)}{f^{2}}df = \frac{1}{\pi}\mathrm{rad}^{2}.  \tag{4}
+$$</p>
+<h3 id="noise-sources">Noise sources</h3>
+<p>Laser output typically stems from two main sources: white noise and flicker (1/f) noise, as detailed in <a href="#references" rel="">3</a>. White noise is a result of spontaneous emission, while flicker noise arises from fluctuations in various sources like the laser cavity and driver circuit. In terms of frequency noise power spectral density, white noise appears as a horizontal level, while flicker noise is evident as a 1/f section located on the low-frequency side.</p>
+<figure><a class="lightgallery" href="/posts/note-laser-noise/typical_frequency_noise_PSD.png" title="/posts/note-laser-noise/typical_frequency_noise_PSD.png" data-thumbnail="/posts/note-laser-noise/typical_frequency_noise_PSD.png" data-sub-html="<h2>Typical frequency noise power spectral density</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/note-laser-noise/typical_frequency_noise_PSD.png"
+            data-srcset="/posts/note-laser-noise/typical_frequency_noise_PSD.png, /posts/note-laser-noise/typical_frequency_noise_PSD.png 1.5x, /posts/note-laser-noise/typical_frequency_noise_PSD.png 2x"
+            data-sizes="auto"
+            alt="/posts/note-laser-noise/typical_frequency_noise_PSD.png" />
+    </a><figcaption class="image-caption">Typical frequency noise power spectral density</figcaption>
+    </figure>
+<p>Usually, people presents the so-called <strong>fundamental/inherent/Schawlow-Townes/quantum-noise-limited Lorentzian linewidth</strong> in literature <a href="#references" rel="">4</a>, which is simply $\pi$ times the white noise intensity. This linewidth should be distinguished from the FWHM of the spectral lineshape. The FWHM of the spectral lineshape is defined as integrated linewidth, which takes into account both the white noise (quantum noise) and 1/f noise (electric noise) and is thus always larger than the fundamental noise.</p>
+<h3 id="relative-intensity-noise">Relative intensity noise</h3>
+<p>Relative Intensity Noise (RIN) characterizes the fluctuations in the power level of a laser. This term is crucial in explaining lasers utilized in fiber-optic communication and LIDAR remote sensing. Unlike frequency noise or laser linewidth, which relies on the laser output&rsquo;s phase, RIN solely relies on its amplitude. RIN is typically measured in units of dB/Hz. For instance, when the laser output undergoes an abrupt phase shift of π, it impacts the frequency noise or laser linewidth, but it does not alter the RIN.</p>
+<h2 id="references">References</h2>
+<hr>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Spectral_density" target="_blank" rel="noopener noreffer ">https://en.wikipedia.org/wiki/Spectral_density</a></li>
+<li>Tran, M. A., Huang, D., &amp; Bowers, J. E. (2019). Tutorial on narrow linewidth tunable semiconductor lasers using Si/III-V heterogeneous integration. APL photonics, 4(11).</li>
+<li><a href="https://emcore.com/wp-content/uploads/2021/04/EMCORE-Laser-Linewidth-Frequency-Noise-and-Measurement.pdf" target="_blank" rel="noopener noreffer ">https://emcore.com/wp-content/uploads/2021/04/EMCORE-Laser-Linewidth-Frequency-Noise-and-Measurement.pdf</a></li>
+<li>Tran, M. A., Huang, D., Guo, J., Komljenovic, T., Morton, P. A., &amp; Bowers, J. E. (2019). Ring-resonator based widely-tunable narrow-linewidth Si/InP integrated lasers. IEEE Journal of Selected Topics in Quantum Electronics, 26(2), 1-14.</li>
+</ol>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Note on Pandoc Usage - Convert Markdown to TeX/PDF - Di Yu Homepage</title><meta name="Description" content="Di Yu&#39;s Homepage"><meta property="og:title" content="Note on Pandoc Usage - Convert Markdown to TeX/PDF" />
+<meta property="og:description" content="PDF versionPlease refer to here for a PDF version of this note.Introduction Pandoc is a versatile tool that simplifies the conversion of markdown files to different formats such as LaTeX, PDF, DOCX, and HTML. By utilizing Pandoc, we can conveniently write our documents in markdown and effortlessly convert them to the desired output format. This approach greatly streamlines the writing and organization of documents, making it more convenient than directly writing the manuscript in LaTeX or HTML." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nagato-D.github.io/posts_content/note-pandoc/" /><meta property="article:section" content="posts_content" />
+<meta property="article:published_time" content="2023-12-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-12-18T00:00:00+00:00" /><meta property="og:site_name" content="Di Yu&#39;s Homepage" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Note on Pandoc Usage - Convert Markdown to TeX/PDF"/>
+<meta name="twitter:description" content="PDF versionPlease refer to here for a PDF version of this note.Introduction Pandoc is a versatile tool that simplifies the conversion of markdown files to different formats such as LaTeX, PDF, DOCX, and HTML. By utilizing Pandoc, we can conveniently write our documents in markdown and effortlessly convert them to the desired output format. This approach greatly streamlines the writing and organization of documents, making it more convenient than directly writing the manuscript in LaTeX or HTML."/>
+<meta name="application-name" content="Di Yu&#39;s Homepage">
+<meta name="apple-mobile-web-app-title" content="Di Yu&#39;s Homepage"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nagato-D.github.io/posts_content/note-pandoc/" /><link rel="prev" href="https://nagato-D.github.io/posts_content/note-laser-noise/" /><link rel="next" href="https://nagato-D.github.io/posts_content/note-microring-resonator/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Note on Pandoc Usage - Convert Markdown to TeX/PDF",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nagato-D.github.io\/posts_content\/note-pandoc\/"
+        },"genre": "posts_content","wordcount":  630 ,
+        "url": "https:\/\/nagato-D.github.io\/posts_content\/note-pandoc\/","datePublished": "2023-12-18T00:00:00+00:00","dateModified": "2023-12-18T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Di Yu"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/publications/"> Publications </a><a class="menu-item" href="/patents/"> Patents </a><a class="menu-item" href="/favorites/"> Favorites </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/publications/" title="">Publications</a><a class="menu-item" href="/patents/" title="">Patents</a><a class="menu-item" href="/favorites/" title="">Favorites</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Note on Pandoc Usage - Convert Markdown to TeX/PDF</h1><div class="content" id="content"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="details admonition note">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>PDF version<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Please refer to <a href="/posts/note-pandoc/Note_pandoc_usage.pdf" rel="">here</a> for a PDF version of this note.</div>
+        </div>
+    </div>
+<h2 id="introduction">Introduction</h2>
+<hr>
+<p><a href="https://pandoc.org/" target="_blank" rel="noopener noreffer "><code>Pandoc</code></a> is a versatile tool that simplifies the conversion of markdown files to different formats such as LaTeX, PDF, DOCX, and HTML. By utilizing <code>Pandoc</code>, we can conveniently write our documents in markdown and effortlessly convert them to the desired output format. This approach greatly streamlines the writing and organization of documents, making it more convenient than directly writing the manuscript in LaTeX or HTML.</p>
+<h2 id="installation">Installation</h2>
+<hr>
+<ol>
+<li>Download <a href="https://mirror-hk.koddos.net/CTAN/systems/texlive/Images/" target="_blank" rel="noopener noreffer ">TeX Live ISO</a> and install.</li>
+<li>Install <a href="https://pandoc.org/installing.html" target="_blank" rel="noopener noreffer ">Pandoc</a>.</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<hr>
+<h3 id="create-a-markdown-file">Create a markdown file</h3>
+<p>Before any usage of <code>Pandoc</code>, we need to create a markdown file. An introduction to markdown syntax can be found <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" target="_blank" rel="noopener noreffer ">here</a>. We recommend VS Code with <code>Markdown All in One</code> and <code>Markdown Preview Enhanced</code> extensions as an editor for writing markdown files.</p>
+<h3 id="insert-a-figure">Insert a figure</h3>
+<p><code>Pandoc</code> can convert the standard figure insertion instruction <code>![caption](figure_path)</code> to corresponding LaTeX instruction <code>\begin{figure} ... \end{figure}</code>. The question is how to specify the size and position of this figure. Here are two tips:</p>
+<ul>
+<li>To specify the size of the figure (e.g., setting figure width to 300 px), you can use this markdown instruction <code>![caption](figure_path){width=300px}</code>.</li>
+<li>To center the figure in markdown, you can invoke HTML instruction as follows:</li>
+</ul>
+<pre tabindex="0"><code>&lt;center&gt;
+
+![caption](figure_path){width=300px}
+
+&lt;/center&gt;
+</code></pre><ul>
+<li>
+<p>Note that a blank line should be added between the <code>&lt;center&gt;</code> (<code>&lt;/center&gt;</code>) and the figure insertion instruction <code>![caption](figure_path){width=300px}</code>.</p>
+</li>
+<li>
+<p>Please note that if the <code>caption</code> key value is left blank, the figure in LaTeX will not be aligned to the center, instead, it will align to the left.</p>
+</li>
+<li>
+<p>All the spaces in the <code>figure_path</code> should be replaced with <code>%20</code>, otherwise the figure won&rsquo;t display properly.</p>
+</li>
+<li>
+<p>If you want to figures to be rendered side-by-side, just put two figure insertion instructions one after another, but separte them with a space, not a line ending, like <code>![caption1](figure1) ![caption2](figure2)</code>.</p>
+</li>
+</ul>
+<h3 id="set-margin-size-in-the-pdf">Set margin size in the pdf</h3>
+<p>In order to control the margin size of the pdf generated by <code>Pandoc</code> during the convertion of a markdown file, you can add the following header to the markdown file:</p>
+<pre tabindex="0"><code>---
+geometry: margin=1in
+---
+</code></pre><h3 id="custom-latex-template">Custom LaTeX template</h3>
+<p>If you want to customize the LaTeX template used by <code>Pandoc</code> for generating LaTeX or PDF files, you can cd to the folder where the input markdown is placed, create a new foler <code>pandoc</code>, and create a <code>pandoc_template.latex</code> file here. To activate template during a conversion, please type in the <code>Pandoc</code> conversion command like this:</p>
+<pre tabindex="0"><code>pandoc input.md -o output.tex --template=./pandoc/pandoc_template.latex
+</code></pre><p>Remember to replace the <code>input.md</code> and <code>ouput.tex</code> with the filename of input and output documents.</p>
+<h3 id="insert-full-size-horizontal-line">Insert full-size horizontal line</h3>
+<p>If you want to insert a full-size horizontal line in the LaTeX/PDF document generated by <code>Pandoc</code>, in a way like how <code>---</code> is rendered in markdown, you will need to do take care of the following points:</p>
+<ol>
+<li>In the input markdown file, make sure there is a blank line between <code>---</code> and other text.</li>
+<li>Use a custom LaTeX template for <code>Pandoc</code>, and add a command in the template file to redefine the horizontal line function (<code>rule</code>), otherwise it won&rsquo;t display as a full-size line.</li>
+<li>The command of redefinition is:</li>
+</ol>
+<pre tabindex="0"><code>\let\OldRule\rule
+\renewcommand{\rule}[2]{\OldRule{\linewidth}{#2}}
+</code></pre><h3 id="multiple-line-equation">Multiple-line equation</h3>
+<p>In markdown, multiple-line equations can be created by adding <code>\\</code> after each line of equation. However, after <code>Pandoc</code> converts a markdown file being converted to a LaTeX file, this break line command will be preserved in the LaTeX file, which won&rsquo;t render as a break line in the final PDF file.</p>
+<p>To fix this issue, a simple way is to redefine the default way that <code>Pandoc</code> renders equations. Specifically, <code>Pandoc</code> uses <code>\[ \]</code> to define equations in LaTeX, but we can add the following command of redefinition in the LaTeX template of <code>Pandoc</code>, which puts every equation in a <code>\begin{align*} \end{align}*</code> environment and thus enables breaking line with <code>\\</code>.</p>
+<pre tabindex="0"><code>\def\[#1\]{%
+  \begin{align*}#1\end{align*}%
+}
+</code></pre></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

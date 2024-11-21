@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Note on Attention Mechanism - Di Yu Homepage</title><meta name="Description" content="Di Yu&#39;s Homepage"><meta property="og:title" content="Note on Attention Mechanism" />
+<meta property="og:description" content="PDF versionPlease refer to here for a PDF version of this note.Introduction Attention mechanism is one fundamental building component in modern natural language processing systems like Transformer and GPT-3. These systems employ the encoder-decoder architecture, where the encoder maps input sentences to a fixed-length vector, which is then transformed to output sentences by the decoder. This architecture suffers from performance degradation when it comes to long input sentences." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nagato-D.github.io/posts_content/note-attention-mechanism/" /><meta property="article:section" content="posts_content" />
+<meta property="article:published_time" content="2024-02-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-01T00:00:00+00:00" /><meta property="og:site_name" content="Di Yu&#39;s Homepage" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Note on Attention Mechanism"/>
+<meta name="twitter:description" content="PDF versionPlease refer to here for a PDF version of this note.Introduction Attention mechanism is one fundamental building component in modern natural language processing systems like Transformer and GPT-3. These systems employ the encoder-decoder architecture, where the encoder maps input sentences to a fixed-length vector, which is then transformed to output sentences by the decoder. This architecture suffers from performance degradation when it comes to long input sentences."/>
+<meta name="application-name" content="Di Yu&#39;s Homepage">
+<meta name="apple-mobile-web-app-title" content="Di Yu&#39;s Homepage"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nagato-D.github.io/posts_content/note-attention-mechanism/" /><link rel="prev" href="https://nagato-D.github.io/posts_content/note-valley-phc/" /><link rel="next" href="https://nagato-D.github.io/posts_content/note-gds/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Note on Attention Mechanism",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nagato-D.github.io\/posts_content\/note-attention-mechanism\/"
+        },"genre": "posts_content","wordcount":  524 ,
+        "url": "https:\/\/nagato-D.github.io\/posts_content\/note-attention-mechanism\/","datePublished": "2024-02-01T00:00:00+00:00","dateModified": "2024-02-01T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Di Yu"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/publications/"> Publications </a><a class="menu-item" href="/patents/"> Patents </a><a class="menu-item" href="/favorites/"> Favorites </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/publications/" title="">Publications</a><a class="menu-item" href="/patents/" title="">Patents</a><a class="menu-item" href="/favorites/" title="">Favorites</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Note on Attention Mechanism</h1><div class="content" id="content"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="details admonition note">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>PDF version<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Please refer to <a href="/posts/note-attention-mechanism/Note_attention_mechanism.pdf" rel="">here</a> for a PDF version of this note.</div>
+        </div>
+    </div>
+<h2 id="introduction">Introduction</h2>
+<hr>
+<p>Attention mechanism is one fundamental building component in modern natural language processing systems like Transformer and GPT-3. These systems employ the encoder-decoder architecture, where the encoder maps input sentences to a fixed-length vector, which is then transformed to output sentences by the decoder. This architecture suffers from performance degradation when it comes to long input sentences. Fortunately, this issue can be effectively mitigated by employing the attention mechanism, which identifies the relevant part of the input sentence for the encoder to map, making the problematic mapping from the whole input sentence to a fixed-length vector unnecessary.</p>
+<p>The attention mechanism was first proposed in [<a href="#reference" rel="">1</a>] by Bahdanau, D. et. al., where it was implemented as part of an <em>RNN Encoder-Decoder</em> architecture. This neural network model demonstrated state-of-the-art performance in English-to-French translation and was published in ICLR 2015. As of 2024, this paper has been cited more than 30,000 times.</p>
+<p>The RNN Encoder-Decoder model consists of two RNNs serving as the encoder and the decoder, respectively. The encoder RNN maps input words $x_{j}$ to a series of hidden states $h_{j}$ ($j = 1, 2, &hellip;, T_{x}$). Then, these hidden states are used to determine a context vector $c_{i}$ for predicting the $i$-th target word. That is to say, the decoder RNN uses its last hidden state $s_{i-1}$, last target word $y_{i-1}$, and the current context vector $c_{i}$ as input for predicting the $i$-th target word.</p>
+<a class="lightgallery" href="/posts/note-attention-mechanism/diagram_attention_mechanism.png" title="/posts/note-attention-mechanism/diagram_attention_mechanism.png" data-thumbnail="/posts/note-attention-mechanism/diagram_attention_mechanism.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/note-attention-mechanism/diagram_attention_mechanism.png"
+            data-srcset="/posts/note-attention-mechanism/diagram_attention_mechanism.png, /posts/note-attention-mechanism/diagram_attention_mechanism.png 1.5x, /posts/note-attention-mechanism/diagram_attention_mechanism.png 2x"
+            data-sizes="auto"
+            alt="/posts/note-attention-mechanism/diagram_attention_mechanism.png" width="200" />
+    </a>
+<p><strong>Fig. 1</strong> Diagram of attention mechanism in an RNN encoder-decoder architecture [<a href="#reference" rel="">1</a>]</p>
+<p>The key idea of the attention mechanism lies in the definition of the context vector $c_{i}$. The context vector is defined as a weighted sum of all these hidden states:</p>
+<p>$$
+c_{i} = \sum_{j=1}^{T_{x}}\alpha_{ij}h_{j},
+$$</p>
+<p>where the coefficients $\alpha_{ij}$ quantify the relevance of each source word $x_{j}$ to the $i$-th target word. These coefficients are calculated as a softmax function as follows:</p>
+<p>$$
+\alpha_{ij} = \frac{\exp(e_{ij})}{\sum_{j=1}^{T_{x}}\exp(e_{ij})},
+$$</p>
+<p>where $e_{ij} = a(s_{i-1}, h_{j})$. The function $a$ is a feedforward neural network to be jointly trained with the RNNs, which serves the purpose of predicting the relevance of each source word for generating the next target word. Intuitively, for a long source sentence, most source words will be assigned with low weights. This effectively avoids the issue of mapping the entire sentence to a fixed-length vector, resulting in a significant performance improvement of the model for handling long input sentences.</p>
+<p>It is worth mentioning that since the weights $\alpha_{ij}$ quantify the relevance between source words and target words, they can be used for alignment. This observation explains the title of this paper: &ldquo;Neural machine translation by jointly learning to align and translate.&rdquo;</p>
+<h2 id="reference">Reference</h2>
+<hr>
+<ol>
+<li>Bahdanau, D., Cho, K., &amp; Bengio, Y. (2014). Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473.</li>
+<li>Cho, K., Van Merriënboer, B., Gulcehre, C., Bahdanau, D., Bougares, F., Schwenk, H., &amp; Bengio, Y. (2014). Learning phrase representations using RNN encoder-decoder for statistical machine translation. arXiv preprint arXiv:1406.1078.</li>
+<li>Sutskever, I., Vinyals, O., &amp; Le, Q. V. (2014). Sequence to sequence learning with neural networks. Advances in neural information processing systems, 27.</li>
+</ol>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

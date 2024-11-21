@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Note on COMSOL-MATLAB Co-simulation - Di Yu Homepage</title><meta name="Description" content="Di Yu&#39;s Homepage"><meta property="og:title" content="Note on COMSOL-MATLAB Co-simulation" />
+<meta property="og:description" content="PDF versionPlease refer to here for a PDF version of this note.Introduction COMSOL is a widely used finite element analysis software for multiphysics simulation. Here, I will introduce how to use the LiveLink for MATLAB, a COMSOL API for MATLAB, to retrieve and process the numerical results obtained in COMSOL. This constitutes a powerful tool that enables almost any kind of calculation regarding classical physical fields.
+Installation We start with an introduction to the installation of MATLAB, COMSOL, and LiveLink for MATLAB." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nagato-D.github.io/posts_content/note-comsol-matlab/" /><meta property="article:section" content="posts_content" />
+<meta property="article:published_time" content="2024-03-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-14T00:00:00+00:00" /><meta property="og:site_name" content="Di Yu&#39;s Homepage" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Note on COMSOL-MATLAB Co-simulation"/>
+<meta name="twitter:description" content="PDF versionPlease refer to here for a PDF version of this note.Introduction COMSOL is a widely used finite element analysis software for multiphysics simulation. Here, I will introduce how to use the LiveLink for MATLAB, a COMSOL API for MATLAB, to retrieve and process the numerical results obtained in COMSOL. This constitutes a powerful tool that enables almost any kind of calculation regarding classical physical fields.
+Installation We start with an introduction to the installation of MATLAB, COMSOL, and LiveLink for MATLAB."/>
+<meta name="application-name" content="Di Yu&#39;s Homepage">
+<meta name="apple-mobile-web-app-title" content="Di Yu&#39;s Homepage"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://nagato-D.github.io/posts_content/note-comsol-matlab/" /><link rel="prev" href="https://nagato-D.github.io/posts_content/note-fiber-connector/" /><link rel="next" href="https://nagato-D.github.io/posts_content/note-optics-journals/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Note on COMSOL-MATLAB Co-simulation",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/nagato-D.github.io\/posts_content\/note-comsol-matlab\/"
+        },"genre": "posts_content","wordcount":  645 ,
+        "url": "https:\/\/nagato-D.github.io\/posts_content\/note-comsol-matlab\/","datePublished": "2024-03-14T00:00:00+00:00","dateModified": "2024-03-14T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Di Yu"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/publications/"> Publications </a><a class="menu-item" href="/patents/"> Patents </a><a class="menu-item" href="/favorites/"> Favorites </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Di Yu Homepage">Di Yu&#39;s Homepage</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/publications/" title="">Publications</a><a class="menu-item" href="/patents/" title="">Patents</a><a class="menu-item" href="/favorites/" title="">Favorites</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Note on COMSOL-MATLAB Co-simulation</h1><div class="content" id="content"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<div class="details admonition note">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>PDF version<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Please refer to <a href="/posts/note-comsol-matlab/Note_comsol_matlab.pdf" rel="">here</a> for a PDF version of this note.</div>
+        </div>
+    </div>
+<h2 id="introduction">Introduction</h2>
+<hr>
+<p><a href="https://www.comsol.com/products" target="_blank" rel="noopener noreffer ">COMSOL</a> is a widely used finite element analysis software for multiphysics simulation. Here, I will introduce how to use the <a href="https://www.comsol.com/livelink-for-matlab" target="_blank" rel="noopener noreffer ">LiveLink for MATLAB</a>, a COMSOL API for MATLAB, to retrieve and process the numerical results obtained in COMSOL. This constitutes a powerful tool that enables almost any kind of calculation regarding classical physical fields.</p>
+<h2 id="installation">Installation</h2>
+<hr>
+<p>We start with an introduction to the installation of MATLAB, COMSOL, and LiveLink for MATLAB.</p>
+<h3 id="matlab">MATLAB</h3>
+<p>To set up the COMSOL-MATLAB co-simulation, you first need to install MATLAB on your computer. You can access the <a href="https://www.mathworks.com/products/matlab.html" target="_blank" rel="noopener noreffer ">MATLAB website</a> and register an account using your institution email. If your institution has purchased the MATLAB service, you should be able to download a release version of MATLAB from that website and install it.</p>
+<h3 id="comsol--livelink-for-matlab">COMSOL &amp; LiveLink for MATLAB</h3>
+<p>Once MATLAB is installed on your computer, you can proceed to install COMSOL and LiveLink for MATLAB. To do this, you need to visit the <a href="https://www.comsol.com/product-download" target="_blank" rel="noopener noreffer ">website of COMSOL</a> and register an account using your institutional email. If your institution has subscribed to the COMSOL product, you can download a release version of COMSOL from that website and install it. During the installation process, you will be guided to choose which modules are needed, such as wave optics, heat transfer, and so on. <strong>Remember to select the LiveLink for MATLAB module</strong> at this stage, and COMSOL&rsquo;s installation routine will automatically set up an API for MATLAB. If your installation is successful, you will find <code>COMSOL Multiphysics with MATLAB</code> in your start menu.</p>
+<h2 id="usage">Usage</h2>
+<hr>
+<p>Let&rsquo;s say you have already set up a COMSOL simulation file (.mph) with results saved in it. Now we will introduce how to retrieve this simulation data in MATLAB. First, open &lsquo;COMSOL Multiphysics with MATLAB&rsquo;, which will launch two windows. One window is for MATLAB, and the other one is a command line window for establishing a link between COMSOL and MATLAB. You can create and perform a .m script in that MATLAB window as you usually do in a normal MATLAB user interface. What&rsquo;s different is that you are allowed to use some special instructions here to access the COMSOL simulation file. For guidance on these commands, please type &lsquo;help mpi&rsquo; in the MATLAB user interface.</p>
+<p>Some common commands provided by LiveLink for MATLAB are:</p>
+<ul>
+<li><code>mphopen</code>: Load a COMSOL simulation file into MATLAB. Example usage: <code>model = mphopen(filename)</code>.</li>
+<li><code>mphglobal</code>: Evaluate a global variable for a specified solution saved in the COMSOL simulation file. Example usage: <code>neff = mphglobal(model, 'ewfd.neff', 'dataset', 'dset1', 'outersolnum', 1)</code>, this command return the effective index of an optical mode in dataset 1 with solution index 1.</li>
+<li><code>mphinterp</code>: Evaluate the field value at specified positions by using interpolation. Example usage: <code>mphinterp(model, 'ewfd.Hz', 'coord', coord_mat)</code>, this command returns the complex amplituds of a magnetic field evaluated at N positions specied by the 2-by-N matrix <code>coord_mat</code>.</li>
+<li><code>mphnavigator</code>: Launch a graphical user interface in MATLAB to view the COMSOL simulation file. This window helps find the indices of data sets and solutions. Example usage: <code>mphnavigator(model)</code>.</li>
+</ul>
+<h2 id="applications">Applications</h2>
+<hr>
+<p>The COMSOL-MATLAB co-simulation can be applied to calculate physical quantities that involve multiple physical fields, such as the resonance shift induced by thermo-optic effect in a microring resonator and the Berry curvature of a photonic crystal. I will share my code for these applications below.</p>
+<h3 id="thermo-optic-effect-in-a-microring-resonator">Thermo-optic effect in a microring resonator</h3>
+<p>Code: <a href="https://1drv.ms/f/s!AgeoyM0wJG9cg44z4BFzt-Ui5f6HLQ?e=orAnWN" target="_blank" rel="noopener noreffer ">https://1drv.ms/f/s!AgeoyM0wJG9cg44z4BFzt-Ui5f6HLQ?e=orAnWN</a></p>
+<p>Results:</p>
+<a class="lightgallery" href="/posts/note-comsol-matlab/temperature_distribution_700K.png" title="/posts/note-comsol-matlab/temperature_distribution_700K.png" data-thumbnail="/posts/note-comsol-matlab/temperature_distribution_700K.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/note-comsol-matlab/temperature_distribution_700K.png"
+            data-srcset="/posts/note-comsol-matlab/temperature_distribution_700K.png, /posts/note-comsol-matlab/temperature_distribution_700K.png 1.5x, /posts/note-comsol-matlab/temperature_distribution_700K.png 2x"
+            data-sizes="auto"
+            alt="/posts/note-comsol-matlab/temperature_distribution_700K.png" width="400" />
+    </a>
+<p>Figure 1: Simulated temperature distribution around a heater placed on an optical waveguide, temperature is expressed in Kelvin.</p>
+<a class="lightgallery" href="/posts/note-comsol-matlab/GM_resonance_shift_vs_temperature.png" title="/posts/note-comsol-matlab/GM_resonance_shift_vs_temperature.png" data-thumbnail="/posts/note-comsol-matlab/GM_resonance_shift_vs_temperature.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/note-comsol-matlab/GM_resonance_shift_vs_temperature.png"
+            data-srcset="/posts/note-comsol-matlab/GM_resonance_shift_vs_temperature.png, /posts/note-comsol-matlab/GM_resonance_shift_vs_temperature.png 1.5x, /posts/note-comsol-matlab/GM_resonance_shift_vs_temperature.png 2x"
+            data-sizes="auto"
+            alt="/posts/note-comsol-matlab/GM_resonance_shift_vs_temperature.png" width="400" />
+    </a>
+<p>Figure 2: Simulated resonance shift in a microring resonator due to temperature variation.</p>
+<h3 id="berry-curvature-of-a-magneto-opticvalley-hall-photonic-crystal">Berry curvature of a magneto-optic/valley-Hall photonic crystal</h3>
+<p>Code: <a href="https://github.com/nagato-D/Berry-curvature-for-photonic-crystals/releases/tag/v2.0.0" target="_blank" rel="noopener noreffer ">https://github.com/nagato-D/Berry-curvature-for-photonic-crystals/releases/tag/v2.0.0</a></p>
+<p>Results:</p>
+<p><a class="lightgallery" href="/posts/note-comsol-matlab/magneto_berry_curvature_band_1.png" title="/posts/note-comsol-matlab/magneto_berry_curvature_band_1.png" data-thumbnail="/posts/note-comsol-matlab/magneto_berry_curvature_band_1.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/note-comsol-matlab/magneto_berry_curvature_band_1.png"
+            data-srcset="/posts/note-comsol-matlab/magneto_berry_curvature_band_1.png, /posts/note-comsol-matlab/magneto_berry_curvature_band_1.png 1.5x, /posts/note-comsol-matlab/magneto_berry_curvature_band_1.png 2x"
+            data-sizes="auto"
+            alt="/posts/note-comsol-matlab/magneto_berry_curvature_band_1.png" width="300" />
+    </a> <a class="lightgallery" href="/posts/note-comsol-matlab/magneto_berry_curvature_band_2.png" title="/posts/note-comsol-matlab/magneto_berry_curvature_band_2.png" data-thumbnail="/posts/note-comsol-matlab/magneto_berry_curvature_band_2.png">
+         <img
+             class="lazyload"
+             src="/svg/loading.min.svg"
+             data-src="/posts/note-comsol-matlab/magneto_berry_curvature_band_2.png"
+             data-srcset="/posts/note-comsol-matlab/magneto_berry_curvature_band_2.png, /posts/note-comsol-matlab/magneto_berry_curvature_band_2.png 1.5x, /posts/note-comsol-matlab/magneto_berry_curvature_band_2.png 2x"
+             data-sizes="auto"
+             alt="/posts/note-comsol-matlab/magneto_berry_curvature_band_2.png" width="300" />
+     </a></p>
+<p>Figure 3: Simulated Berry curvature of the first (left) and second (right) bands of a magneto-optic square-lattice photonic crystal.</p>
+<p><a class="lightgallery" href="/posts/note-comsol-matlab/valley_berry_curvature_band_1.png" title="/posts/note-comsol-matlab/valley_berry_curvature_band_1.png" data-thumbnail="/posts/note-comsol-matlab/valley_berry_curvature_band_1.png">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/note-comsol-matlab/valley_berry_curvature_band_1.png"
+            data-srcset="/posts/note-comsol-matlab/valley_berry_curvature_band_1.png, /posts/note-comsol-matlab/valley_berry_curvature_band_1.png 1.5x, /posts/note-comsol-matlab/valley_berry_curvature_band_1.png 2x"
+            data-sizes="auto"
+            alt="/posts/note-comsol-matlab/valley_berry_curvature_band_1.png" width="300" />
+    </a> <a class="lightgallery" href="/posts/note-comsol-matlab/valley_berry_curvature_band_2.png" title="/posts/note-comsol-matlab/valley_berry_curvature_band_2.png" data-thumbnail="/posts/note-comsol-matlab/valley_berry_curvature_band_2.png">
+         <img
+             class="lazyload"
+             src="/svg/loading.min.svg"
+             data-src="/posts/note-comsol-matlab/valley_berry_curvature_band_2.png"
+             data-srcset="/posts/note-comsol-matlab/valley_berry_curvature_band_2.png, /posts/note-comsol-matlab/valley_berry_curvature_band_2.png 1.5x, /posts/note-comsol-matlab/valley_berry_curvature_band_2.png 2x"
+             data-sizes="auto"
+             alt="/posts/note-comsol-matlab/valley_berry_curvature_band_2.png" width="300" />
+     </a></p>
+<p>Figure 4: Simulated Berry curvature of the first (left) and second (right) bands of a valley-Hall photonic crystal.</p>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.119.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2023 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

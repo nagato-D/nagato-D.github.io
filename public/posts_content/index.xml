@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts_contents on Di Yu Homepage</title>
+    <link>https://nagato-D.github.io/posts_content/</link>
+    <description>Recent content in Posts_contents on Di Yu Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nagato-D.github.io/posts_content/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note on Spontaneous Synchronization of Coupled Nonlinear Oscillators</title>
+      <link>https://nagato-D.github.io/posts_content/note-oscillator-synchronization/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-oscillator-synchronization/</guid>
+      <description>Introduction The harmonic oscillator is a simple physical model that has been widely used to describe all sorts of oscillations, including acoustic, electromagnetic, and even atomic oscillations. Yet, this model has a limitation in that it cannot explain the ubiquitous phenomenon of spontaneous synchronization of coupled oscillators. This can be observed in scenarios such as mechanically coupled pendulums, phase-locked electrical oscillators, and circadian rhythms synchronized to the environment. To understand these phenomena, we need to take into account the nonlinear dynamical properties of the oscillation, which are absent in the harmonic oscillator model.</description>
+    </item>
+    
+    <item>
+      <title>Note on Anime Recommendation in 2024Q4</title>
+      <link>https://nagato-D.github.io/posts_content/note-anime-2024q4/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-anime-2024q4/</guid>
+      <description> Hello，你好，こんにちは！
+不知不觉时间已经来到了 2024 年的最后一个季度。大家过得还好吗？
+虽然我们最近要年终冲绩效，但番剧分享还是得坚持 :D
+这里推荐两部作品，一部是本季度的新番 &amp;ldquo;地: 关于地球的运动&amp;rdquo;
+{width=400}
+这是关于中世纪的一群热爱星空的学者冒着被视为异端处决的风险探索天体运动秩序的故事 另一部则是 2018 年播出 &amp;ldquo;少女⭐歌剧 Revue Starlight&amp;rdquo;
+{width=400}
+在一个小国家的小村庄流传的，夏天的星之祭典在一年一度倾泻的流星下我和弗洛拉我和克莱尔命运的相遇了我们仿佛早已相识明年也在这里相会吧在这星之祭典的夜晚StarLight那是在星光指引下的，命运的故事 </description>
+    </item>
+    
+    <item>
+      <title>Note on Design of Traveling-wave Mach-Zehnder Modulators</title>
+      <link>https://nagato-D.github.io/posts_content/note-modulator-design/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-modulator-design/</guid>
+      <description>Introduction Traveling-wave Mach-Zehnder modulators based on thin-film lithium niobate enable high-bandwidth, low-voltage encoding of RF signals onto optical carrier waves, which is essential for realizing high-speed, power-efficient data communication. In this note, I introduce a numerical method to calculate the modulation efficiency and bandwidth of traveling-wave Mach-Zehnder modulators. We will use COMSOL simulation to reproduce the simulation results in [1].
+Code and Simulation Files My COMSOL simulation files and codes for calculating the modulation efficiency and bandwidth of a traveling-wave Mach-Zehnder modulator are available using the following links.</description>
+    </item>
+    
+    <item>
+      <title>Note on Optoelectronic Oscillators</title>
+      <link>https://nagato-D.github.io/posts_content/note-optoelectronic-oscillator/</link>
+      <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-optoelectronic-oscillator/</guid>
+      <description>Introduction An optoelectronic oscillator is an RF (radio-frequency) oscillator that incorporates an optical section to enhance loop delay and reduce phase noise. This type of oscillator shows promise in generating low-noise high-frequency microwave signals, which are crucial for applications such as 5G communication, test and measurement equipment, and remote sensing. In this document, we will discuss the structure and operation principles of optoelectronic oscillators. We will also present a mathematical framework, originally derived by X.</description>
+    </item>
+    
+    <item>
+      <title>Note on Microwave Oscillators</title>
+      <link>https://nagato-D.github.io/posts_content/note-microwave-oscillator/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-microwave-oscillator/</guid>
+      <description>NoteThis page presents only the introduction section of this note. Please refer to here for a complete version.Introduction In this note, we will give an introduction to microwave oscillators, covering their applications, performance indicators, and typical specifications. A detailed explanation of phase noise spectrum is present.</description>
+    </item>
+    
+    <item>
+      <title>Note on Phase-locked Loop</title>
+      <link>https://nagato-D.github.io/posts_content/note-phase-locked-loop/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-phase-locked-loop/</guid>
+      <description>Introduction to Phase-locked Loop The phase-locked loop (PLL) is an electronic module that generates a signal with a stable frequency. The idea is to introduce a feedback loop that calculates the instantaneous phase (or frequency) drift of an oscillator and corrects it. The basic architecture of a PLL is depicted in Figure 1.
+Basic architecture of a phase-locked loop [1].The PLL comprises a voltage-controlled oscillator (VCO), a reference oscillator (OSC), and a feedback loop that stabilizes the frequency of the VCO.</description>
+    </item>
+    
+    <item>
+      <title>Note on Relation Between Near-Field Mode Dimensions and Far-Field Pattern</title>
+      <link>https://nagato-D.github.io/posts_content/note-mode-field-dimension/</link>
+      <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-mode-field-dimension/</guid>
+      <description>For a semiconductor laser chip, the far-field divergence angle is directly connected to the mode field dimensions measured at its optical exit facet. This relation is quite useful for estimating the far-field pattern of a semiconductor laser from its waveguide mode profile and vice versa. In this note, we give an introduction to this relation. We also apply this relation to a commercial semiconductor gain chip (model: Thorlabs SAF1126C RSOA) to derive the chip&amp;rsquo;s near-field mode dimensions from its far-field specifications.</description>
+    </item>
+    
+    <item>
+      <title>Note on Anime Recommendation in 2024Q3</title>
+      <link>https://nagato-D.github.io/posts_content/note-anime-2024q3/</link>
+      <pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-anime-2024q3/</guid>
+      <description>Hello 👋 米娜桑，最近过得还好吗 ^_^
+这个 7 月我真是 High 到不行啊 😇
+本季度，多部高制作水平的动漫同时上线，业界颇有百花争鸣的姿态 👍
+回想起了 2014 年的夏天，泪目 😂
+这里推荐几部，仅供参考 (疯狂安利):
+败犬女主太多了! 锐评: 作画水平令人惊艳，人物刻画生动细腻。虽然只出了一集，但专业的动画糕手要敢于下判断，这香槟我先开为敬。最后，老八可爱捏~
+杖与剑的魔剑谭 锐评: 本季度另一部制作水平位列 Tier 0 的作品。虽然很多人说此作剧情太 &amp;ldquo;典&amp;rdquo;，但黄金厕纸也是黄金 (暴论)git
+身为 VTuber 的我因为忘记关台而成了传说 锐评: 樱小姐你玩的开心就好
+鹿乃子乃子虎视眈眈 锐评: 令人放松的搞笑类作品。下班后看一集，补充宇宙能量
+最后再给大家推荐一个看动漫的网站: https://anime.girigirilove.com//
+Enjoy yourself!</description>
+    </item>
+    
+    <item>
+      <title>Note on Far-field Pattern Measurement Setup</title>
+      <link>https://nagato-D.github.io/posts_content/note-far-field-pattern-measurement/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-far-field-pattern-measurement/</guid>
+      <description>NoteThis page presents only the introduction section of this note. Please refer to here for a complete version.Introduction Collimated and narrow laser beams are ideal for many industrial applications, including free-space communication, light detection and ranging (LiDAR), and material processing. Practical laser beams, however, are not perfectly collimated and always bear finite divergence angles. That is to say, the diameter of the laser beam changes along its propagation direction.</description>
+    </item>
+    
+    <item>
+      <title>Note on Cross-correlation Self-heterodyne Laser Linewidth Measurement</title>
+      <link>https://nagato-D.github.io/posts_content/note-linewidth-measurement/</link>
+      <pubDate>Fri, 10 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-linewidth-measurement/</guid>
+      <description>NoteThis page presents only the introduction section of this note. Please refer to here for a complete version.Introduction Lasers with narrow linewidths are essential for a variety of applications, such as optical atomic clocks, spectroscopy, and light detection and ranging (LIDAR). To accurately determine the linewidths of these lasers, it is necessary to measure their noise spectrum with high precision. In this note, we present a correlated self-heterodyne (COSH) setup capable of detecting frequency noise as low as 0.</description>
+    </item>
+    
+    <item>
+      <title>Note on Kerr Solitons</title>
+      <link>https://nagato-D.github.io/posts_content/note-kerr-soliton/</link>
+      <pubDate>Sat, 13 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-kerr-soliton/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction to Kerr Nonlinearity and Solitons Kerr effect refers to the phenomenon that the refractive index of a material changes linearly with the intensity of an external electric field. Light passing through a material with the Kerr effect can induce a refractive index change since light is associated with an oscillating electric field. Formally, this change in refractive index is formulated as $\Delta n = n_{0}+n_{2}I$ [1].</description>
+    </item>
+    
+    <item>
+      <title>Note on Mode-Locked Lasers</title>
+      <link>https://nagato-D.github.io/posts_content/note-mode-locking/</link>
+      <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-mode-locking/</guid>
+      <description>Introduction Mode-locked lasers are a special class of lasers that generate periodic short optical pulses. These lasers operate by exciting multiple modes that emit light at specific phase differences, resulting in periodic constructive interference and high-energy optical pulses. This mechanism, which creates a periodic sequence of optical pulses, is called mode locking.
+Mode-Locking Methods There are two main approaches to realizing a mode-locked laser: active mode locking and passive mode locking [1].</description>
+    </item>
+    
+    <item>
+      <title>Note on Polarization Maintained Fibers</title>
+      <link>https://nagato-D.github.io/posts_content/note-pmf/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-pmf/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction A single-mode fiber with a circularly symmetric cross-section does not exhibit birefringence, meaning that the effective index of the mode remains the same regardless of the polarization state. This polarization degeneracy allows the two independent polarization states to easily couple when subjected to external perturbations, such as strain or bending.
+Polarization-maintaining fibers (PM fibers or PMFs) are a special class of optical fibers designed to intentionally introduce birefringence.</description>
+    </item>
+    
+    <item>
+      <title>Note on Premier Journals in Optics</title>
+      <link>https://nagato-D.github.io/posts_content/note-optics-journals/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-optics-journals/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction This note introduces mainstream academic journals in the field of optics. Please keep in mind that the ranks and comments provided for these journals are subjective and reflect only my personal impressions.
+Tier 1 Nature Link: https://www.nature.com/ Impact factor: 64.8 (2022) Average review time: 4.1 months [1] Comment: One of the most high-impact interdisciplinary academic journals.</description>
+    </item>
+    
+    <item>
+      <title>Note on COMSOL-MATLAB Co-simulation</title>
+      <link>https://nagato-D.github.io/posts_content/note-comsol-matlab/</link>
+      <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-comsol-matlab/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction COMSOL is a widely used finite element analysis software for multiphysics simulation. Here, I will introduce how to use the LiveLink for MATLAB, a COMSOL API for MATLAB, to retrieve and process the numerical results obtained in COMSOL. This constitutes a powerful tool that enables almost any kind of calculation regarding classical physical fields.
+Installation We start with an introduction to the installation of MATLAB, COMSOL, and LiveLink for MATLAB.</description>
+    </item>
+    
+    <item>
+      <title>Note on Fiber Connectors</title>
+      <link>https://nagato-D.github.io/posts_content/note-fiber-connector/</link>
+      <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-fiber-connector/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.FC Connector The FC (Fiber Channel) connector is an optical fiber connector that uses a ceramic ferrule to safeguard and align the fiber tip. The figure below illustrates a typical FC connector.
+Fig. 1 Left: an image of a FC connector [1]. Right: an illustration of the ferrule in a FC connector [2].
+Polish Options To ensure high-quality signal transmission, an optical fiber connector must have low insertion loss and back reflection.</description>
+    </item>
+    
+    <item>
+      <title>Note on Premier Academic Conferences on Optical Communication</title>
+      <link>https://nagato-D.github.io/posts_content/note-optical-comm-conferences/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-optical-comm-conferences/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Summary In the field of optical communication, there are three widely recognized premier academic conferences. They are the Optical Fiber Conference (OFC), European Conference on Optical Communications (ECOC), and Conference on Lasers and Electro-Optics (CLEO).
+Optical Fiber Conference (OFC) Homepage: https://www.ofcconference.org/en-us/home/ Date: Every year in Mar. Duration: 5 days Location: Usually California, U.S. OFC is the premier international academic conference on optical communications and networks.</description>
+    </item>
+    
+    <item>
+      <title>Note on Transformer: Attention Is All You Need</title>
+      <link>https://nagato-D.github.io/posts_content/note-transformer/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-transformer/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction The Transformer is a machine learning model for sequence transduction, featuring high prediction accuracy, low computational complexity, and high computation parallelization. This model is the building block of modern large language models like GPT-3, which is conceived as a competitive candidate for realizing artificial general intelligence (AGI). The Transformer was firstly proposed in NIPS 2017 by a research group at Google.</description>
+    </item>
+    
+    <item>
+      <title>Note on GDS File</title>
+      <link>https://nagato-D.github.io/posts_content/note-gds/</link>
+      <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-gds/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction GDSII is a database file format (filename extension .gds) which is used for storing and transferring design layout of integrated circuits. A GDS file contains a series of planar geometries, each of them is assigned with a layer index. These geometries define the shape of devices, and the corresponding layer indices specify the order in which these devices should be fabricated.</description>
+    </item>
+    
+    <item>
+      <title>Note on Attention Mechanism</title>
+      <link>https://nagato-D.github.io/posts_content/note-attention-mechanism/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-attention-mechanism/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction Attention mechanism is one fundamental building component in modern natural language processing systems like Transformer and GPT-3. These systems employ the encoder-decoder architecture, where the encoder maps input sentences to a fixed-length vector, which is then transformed to output sentences by the decoder. This architecture suffers from performance degradation when it comes to long input sentences.</description>
+    </item>
+    
+    <item>
+      <title>Limitations of Topological Protection in Valley Photonic Crystals</title>
+      <link>https://nagato-D.github.io/posts_content/note-valley-phc/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-valley-phc/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction Topological optics is a research field that investigates the properties of nanophotonic materials with topologically nontrivial band structures. This field has raised people&amp;rsquo;s interests in recent years for its potential in developing low-loss optical waveguides and in studying fundamental condensed matter physics. Valley photonic crystals (VPCs) are particularly interesting among numerous proposals of topologically nontrivial photonic materials.</description>
+    </item>
+    
+    <item>
+      <title>Note on ResNet</title>
+      <link>https://nagato-D.github.io/posts_content/note-resnet/</link>
+      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-resnet/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction Deep convolutional neural networks are a powerful tool for image classification tasks. Deep networks are capable of capturing high-level features and can approximate complicated mappings with higher accuracy. For these reasons, deep neural networks may exhibit better performance than shallow ones in image recognition problems. However, training such deep learning models is difficult because the training accuracy usually degrades as the network depth increases (see Fig.</description>
+    </item>
+    
+    <item>
+      <title>Note on Kaiming He&#39;s PhD Thesis</title>
+      <link>https://nagato-D.github.io/posts_content/note-kaiming-he/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-kaiming-he/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction Kaiming He is an influential scholar in the field of computer vision. His papers have received more than 500,000 citations as of 2023, according to Google Scholar. His research on ResNets has established a fundamental building block in modern deep learning models. Kaiming He has been a faculty member in the Department of EECS at MIT since 2024.</description>
+    </item>
+    
+    <item>
+      <title>Note on Effective Index</title>
+      <link>https://nagato-D.github.io/posts_content/note-effective-index/</link>
+      <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-effective-index/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction When light travels through a waveguide, its phase undergoes periodic changes as it moves along. The effective index is a measure of how frequently these phase changes occur compared to the wavelength of light in free space, but with the same frequency. Mathematically, the effective index, denoted as $n_{\rm eff}$, is defined as [1]:
+$$ n_{\rm eff} = \frac{\lambda}{2\pi}\beta = \frac{\beta}{k}, $$</description>
+    </item>
+    
+    <item>
+      <title>Note on Microring Resonator</title>
+      <link>https://nagato-D.github.io/posts_content/note-microring-resonator/</link>
+      <pubDate>Tue, 19 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-microring-resonator/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction In integrated photonics, resonators are usually formed by looped waveguides known as &amp;lsquo;ring resonators.&amp;rsquo; Ring resonators offer favorable compactness and highly wavelength-selective transmission characteristics. For these reasons, ring resonators have become fundamental building blocks in integrated photonics, particularly in applications such as filters, sensors, and modulators, to name a few [1]. In this note, we will introduce the basic properties of ring resonators and briefly discuss their connection to materials and the fabrication process.</description>
+    </item>
+    
+    <item>
+      <title>Note on Pandoc Usage - Convert Markdown to TeX/PDF</title>
+      <link>https://nagato-D.github.io/posts_content/note-pandoc/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-pandoc/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Introduction Pandoc is a versatile tool that simplifies the conversion of markdown files to different formats such as LaTeX, PDF, DOCX, and HTML. By utilizing Pandoc, we can conveniently write our documents in markdown and effortlessly convert them to the desired output format. This approach greatly streamlines the writing and organization of documents, making it more convenient than directly writing the manuscript in LaTeX or HTML.</description>
+    </item>
+    
+    <item>
+      <title>Note on Laser Noise</title>
+      <link>https://nagato-D.github.io/posts_content/note-laser-noise/</link>
+      <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-laser-noise/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Basic Concepts Fourier transform Given a signal $x(t)$, its Fourier transform is $$ \hat{x}(f) = \int_{-\infty}^{\infty}\exp(-i2\pi ft)x(t)dt. \tag{1} $$
+Power spectral density (spectral line shape) The power spectral density of a signal describes the distribution of power into frequency components. The calculation of power spectral should involve the calculation of Fourier transform. However, for a signal associated with a stationary process, its Fourier transform may diverge.</description>
+    </item>
+    
+    <item>
+      <title>Note on Deploying a Personal Website on Github</title>
+      <link>https://nagato-D.github.io/posts_content/note-deploy-personal-website/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nagato-D.github.io/posts_content/note-deploy-personal-website/</guid>
+      <description>PDF versionPlease refer to here for a PDF version of this note.Create a Markdown File Write note with Markdown. Convert the Markdown File to a Local Website Install hugo and configure the website folder Install Hugo following the guidance. Install powershell. Open powershell and change the directory to the location you want to place the website files by running cd &amp;lt;loc&amp;gt;. Create a new site using Hugo by running hugo new site &amp;lt;site_name&amp;gt; in powershell.</description>
+    </item>
+    
+  </channel>
+</rss>
