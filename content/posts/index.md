@@ -10,4 +10,6 @@ title = "Category of Posts"
 
 - [Computer Science](/notes_computer_science/)
 
+- [Practical Skills](/notes_skills/)
+
 - [Anime Recommendations](/notes_anime/)
