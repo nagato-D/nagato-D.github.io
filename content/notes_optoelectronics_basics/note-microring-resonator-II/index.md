@@ -79,6 +79,8 @@ Importantly, $1 - T = h/[1+(\Delta\omega/(w/2))^{2}]$ describes a standard Loren
 
 In general terms, the attenuation rate of a damped oscillation is quantified by the Q factor, defined as $Q = \omega/w = 2\pi\tau/T$, where $w$ signifies the power attenuation rate, $\omega$ represents the oscillation angular frequency, $\tau = 1/w$ denotes the decay time, and $T = 2\pi/\omega$ indicates the oscillation period. For a ring resonator coupled (or loaded) to a bus waveguide, both the intrinsic loss $a$ and the coupling loss $r$ contribute to $\omega$ and hence determine $Q$. In this scenario, the Q factor is termed as the loaded Q factor. As the coupling strength between the ring and the bus waveguide decreases, the loaded Q factor of the ring will approach a value determined by the intrinsic loss. This specific value is called the intrinsic Q factor, which is computed by assuming no coupling loss ($r = 1$).
 
+The PDF version of this note is available [here](/posts/note-microring-resonator-II/Note_ring_resonator_II.pdf).
+
 ## Reference
 
 ---
