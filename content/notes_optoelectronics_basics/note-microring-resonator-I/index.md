@@ -1,5 +1,5 @@
 +++
-title = 'Note on Microring Resonator'
+title = 'Note on Microring Resonator (Part I)'
 author = 'Di Yu'
 date = 2023-12-19
 draft = false
@@ -104,7 +104,7 @@ The resonator is in the under-coupling regime if $\kappa < l$. In this regime, t
 The resonator is in the critical-coupling regime if $\kappa = l$. The most remarkable feature of this regime is that the transmittance of the bus waveguide at resonance is minimized, making it a favorable regime for band-pass/stop filters.
 
 {{< admonition type=note title="PDF version" open=false >}}
-Please refer to [here](/posts/note-microring-resonator/Note_ring_resonator.pdf) for a PDF version of this note.
+Please refer to [here](/posts/note-microring-resonator-I/Note_ring_resonator.pdf) for a PDF version of this note.
 {{< /admonition >}}
 
 ## Reference
