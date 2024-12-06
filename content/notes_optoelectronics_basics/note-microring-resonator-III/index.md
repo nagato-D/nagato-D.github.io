@@ -34,7 +34,7 @@ $$
 
 Here, $g_{12}$, $g_{21}$, and $\kappa$ are coefficients that need to be determined.
 
-First, we determine $g_{12}$ and $g_{21}$. In the absence of coupling loss or intrinsic loss in the ring $\gamma_{T} = \gamma_{ex} = \gamma_{in} = 0$, the intracavity power should remain constant: $|a_{1}|^{2} + |a_{2}|^{2} = C$. We express the coupled mode equation in matrix form $d\mathbf{a}/dt = i\mathbf{H}\mathbf{a}$, where $\mathbf{H}$ must be a Hermitian matrix. Hence, $g_{12}$ and $g_{21}$ should be pure imaginary numbers. Furthermore, due to time reversal symmetry, the mode coupling should be symmetric: $g_{12} = g_{21}$. Therefore, we can write $g_{12} = g_{21} = ig/2$, where $g$ is a real number representing the power coupling rate between the clockwise and counter-clockwise modes.
+First, we determine $g_{12}$ and $g_{21}$. In the absence of coupling loss or intrinsic loss in the ring $\gamma_{T} = \gamma_{ex} = \gamma_{in} = 0$, the intracavity power should remain constant: $|a_{1}|^{2} + |a_{2}|^{2} = C$. We express the coupled mode equation in matrix form $d\mathbf{a}/dt = i\mathbf{H}\mathbf{a}$, where $\mathbf{H}$ must be a Hermitian matrix to ensure energy conservation. Hence, $g_{12}$ and $g_{21}$ should be pure imaginary numbers. Furthermore, due to time reversal symmetry, the mode coupling should be symmetric: $g_{12} = g_{21}$. Therefore, we can write $g_{12} = g_{21} = ig/2$, where $g$ is a real number representing the power coupling rate between the clockwise and counter-clockwise modes.
 
 Next, we consider the out-coupling coefficient $\kappa$. Assuming no detuning and no mode coupling ($\Delta\omega = 0$ and $g = 0$) for simplicity, the evolution of the intracavity field is solely determined by the coupling loss. It is essential to note that coupling loss occurs only when light passes through the coupler, whereas intrinsic loss occurs throughout the ring. This distinction complicates our system modeling. However, we can apply the mean-field approximation, replacing the position-dependent coupling loss with a mean, uniformly distributed loss.
 
@@ -66,7 +66,7 @@ This approximation holds when the roundtrip power coupling ratio $\theta \ll 1$.
 
 ### Coupled mode equation with mode coupling
 
-In this section, we summarize the coupled mode equation derived earlier. For an all-pass ring resonator with both counter-clockwise and clockwise modes, the coupled mode equations for the mode coefficients $a_{1}$ and $a_{2}$ are given by [[1](#reference)]:
+In this section, we summarize the coupled mode equation derived earlier. For an all-pass ring resonator with both counter-clockwise and clockwise modes, the coupled mode equations for the mode coefficients $a_{1}$ and $a_{2}$ are given by [[2](#reference)]:
 
 $$
 \frac{da_{1}}{dt} = -(i\Delta\omega + \frac{\gamma_{ex}+\gamma_{in}}{2})a_{1} + i\frac{g}{2}a_{2} + i\sqrt{\gamma_{ex}}s_{in}',  \tag{6.1}
@@ -119,4 +119,5 @@ The PDF version of this note is available [here](/posts/note-microring-resonator
 
 ---
 
-1. Puckett, M. W., Liu, K., Chauhan, N., Zhao, Q., Jin, N., Cheng, H., ... & Blumenthal, D. J. (2021). 422 Million intrinsic quality factor planar integrated all-waveguide resonator with sub-MHz linewidth. Nature communications, 12(1), 934.
+1. Bogaerts, W., De Heyn, P., Van Vaerenbergh, T., De Vos, K., Kumar Selvaraja, S., Claes, T., ... & Baets, R. (2012). Silicon microring resonators. Laser & Photonics Reviews, 6(1), 47-73.
+2. Puckett, M. W., Liu, K., Chauhan, N., Zhao, Q., Jin, N., Cheng, H., ... & Blumenthal, D. J. (2021). 422 Million intrinsic quality factor planar integrated all-waveguide resonator with sub-MHz linewidth. Nature communications, 12(1), 934.
