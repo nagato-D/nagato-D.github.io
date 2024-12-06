@@ -68,11 +68,11 @@ where $\Delta\omega$ represents the detuning from the resonant frequency, $t_{rt
 It is important to note that a Taylor expansion was applied around a resonant frequency. As the frequency of maximum transmittance for an all-pass ring is situated outside any resonant dip, away from any resonant frequency, the Taylor expansion cannot be utilized for calculating the maximum transmittance. Instead, Equation 3 should be employed to determine the maximum transmittance by setting $\phi = (2N+1)\pi$ for some non-negative integer $N$. The resulting transmittance is $T_{\rm max} = \frac{(r+a)^{2}}{(1+ra)^{2}}$ [[2](#reference)]. In summary, the FWHM and extinction ratio for a resonance dip of an all-pass ring can be obtained as follows:
 
 $$
-{\rm FWHM}_{\omega} = w = 2\frac{1-ar}{\sqrt{ar}}\frac{c}{n_gL},  \tag{5}
+{\rm FWHM}_{\omega} = w = 2\frac{1-ar}{\sqrt{ar}}\frac{c}{n_gL},  \tag{5.1}
 $$
 
 $$
-{\rm ER} = \frac{T_{\max}}{T_{\min}} = \frac{(r+a)^{2}(1-ra)^{2}}{(1+ra)^{2}(r-a)^{2}}.  \tag{5}
+{\rm ER} = \frac{T_{\max}}{T_{\min}} = \frac{(r+a)^{2}(1-ra)^{2}}{(1+ra)^{2}(r-a)^{2}}.  \tag{5.2}
 $$
 
 Importantly, $1 - T = h/[1+(\Delta\omega/(w/2))^{2}]$ describes a standard Lorentzian line shape with a height of $h$ and a full width at half maximum (FWHM) of $w$. Through Fourier transform, it can be demonstrated that this frequency-domain Lorentzian resonance dip corresponds to an exponentially decaying time-domain signal $s(t) \propto \exp(-wt/2-i\omega t)$, depicting a typical damped oscillation. This time-domain signal actually illustrates the evolution of the intracavity optical field amplitude, where the intracavity power $P \propto |s(t)|^{2} = \exp(-wt)$. Consequently, the FWHM of the resonance dip in the transmittance spectrum (power transmission versus angular frequency) is equivalent to the intracavity power decaying rate $|\frac{1}{P}\frac{dP}{dt}| = w$.
