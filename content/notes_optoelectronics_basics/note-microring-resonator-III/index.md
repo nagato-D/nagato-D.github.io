@@ -25,11 +25,11 @@ An all-pass ring is a ring resonator evanescently coupled to a nearby bus wavegu
 
 ### Derivation of coupled mode equation
 
-We use a phenomenological approach to derive the coupled mode equation for $a_{1}$ and $a_{2}$. In the absence of pump light, coupling loss, or mode coupling, each mode oscillates at the initial excitation frequency and exhibits an exponential power decay. Thus, the evolution of mode coefficients follows $a_{1,2} \propto \exp(-i\Delta\omega - \gamma_{T}/2)$. The coupled mode equation takes the following form:
+We use a phenomenological approach to derive the coupled mode equation for $a_{1}$ and $a_{2}$. In the absence of pump light, coupling loss, or backward mode coupling, each mode will oscillate at its resonant frequency and exhibits an exponential energy decay. Thus, the evolution of mode coefficients follows $a_{1,2} \propto \exp(-i\omega_{c} - \gamma_{T}/2)$. The corresponding equation of motion should be $da_{1,2}/dt = -(i\omega_{c}+\gamma_{T}/2)a_{1,2}$. Taking into account the backward mode coupling and input/output of the ring, the complete coupled mode equation takes the following form:
 
 $$
-\frac{da_{1}}{dt} = -(i\Delta\omega + \frac{\gamma_{T}}{2})a_{1} + g_{12}a_{2} + \kappa s_{in},\\
-\frac{da_{2}}{dt} = -(i\Delta\omega + \frac{\gamma_{T}}{2})a_{2} + g_{21}a_{1}.  \tag{1}
+\frac{da_{1}}{dt} = -(i\omega_{c} + \frac{\gamma_{T}}{2})a_{1} + g_{12}a_{2} + \kappa s_{in},\\
+\frac{da_{2}}{dt} = -(i\omega_{c} + \frac{\gamma_{T}}{2})a_{2} + g_{21}a_{1}.  \tag{1}
 $$
 
 Here, $g_{12}$, $g_{21}$, and $\kappa$ are coefficients that need to be determined.
@@ -69,11 +69,11 @@ This approximation holds when the roundtrip power coupling ratio $\theta \ll 1$.
 In this section, we summarize the coupled mode equation derived earlier. For an all-pass ring resonator with both counter-clockwise and clockwise modes, the coupled mode equations for the mode coefficients $a_{1}$ and $a_{2}$ are given by [[2](#reference)]:
 
 $$
-\frac{da_{1}}{dt} = -(i\Delta\omega + \frac{\gamma_{ex}+\gamma_{in}}{2})a_{1} + i\frac{g}{2}a_{2} + i\sqrt{\gamma_{ex}}s_{in}',  \tag{6.1}
+\frac{da_{1}}{dt} = -(i\omega_{c} + \frac{\gamma_{ex}+\gamma_{in}}{2})a_{1} + i\frac{g}{2}a_{2} + i\sqrt{\gamma_{ex}}s_{in}',  \tag{6.1}
 $$
 
 $$
-\frac{da_{2}}{dt} = -(i\Delta\omega + \frac{\gamma_{ex}+\gamma_{in}}{2})a_{2} + i\frac{g}{2}a_{1},  \tag{6.2}
+\frac{da_{2}}{dt} = -(i\omega_{c} + \frac{\gamma_{ex}+\gamma_{in}}{2})a_{2} + i\frac{g}{2}a_{1},  \tag{6.2}
 $$
 
 $$
@@ -82,7 +82,7 @@ $$
 
 In these equations:
 
-- $\Delta\omega$ is the laser detuning from the mode resonant frequency.
+- $\omega_{c}$ is the mode resonant frequency (in the absence of backward mode coupling).
 - $s_{in}' = \sqrt{1/\tau_{rt}}s_{in}$ and $s_{out}' = \sqrt{1/\tau_{rt}}s_{out}$ are the scaled amplitudes of the input and transmitted optical fields, respectively. Here, $\tau_{rt} = n_{g}L/c$ represents the roundtrip delay.
 - $\gamma_{in} = \alpha c/n_{g}$ is the intrinsic decay rate, where $\alpha$ is the intensity attenuation coefficient.
 - $\gamma_{ex} = \theta c/n_{g}L$ is the coupling decay rate, with $\theta$ being the roundtrip power coupling ratio.
@@ -90,7 +90,7 @@ In these equations:
 
 ### Resonance line shape with mode splitting
 
-Here, we derive the steady-state transmission spectrum of an all-pass ring resonator with backscattering. In the steady state, $da_{1}/dt = da_{2}/dt = 0$. We denote the total decay rate as $\gamma_{T} = \gamma_{in}+\gamma_{ex}$. From the first two equations in Equation 6, we can derive:
+Here, we derive the steady-state transmission spectrum of an all-pass ring resonator with backscattering. In the steady state, the mode amplitudes oscillate at the laser frequency $\omega$, therefore $da_{1}/dt = -i\omega a_{1}$ and $da_{2}/dt = -i\omega a_{2}$. We denote the total decay rate as $\gamma_{T} = \gamma_{in}+\gamma_{ex}$. From the first two equations in Equation 6, we can derive:
 
 $$
 a_{2} = \frac{ig/2}{i\Delta\omega + \gamma_{T}/2}a_{1},  \tag{7.1}
@@ -99,7 +99,7 @@ $$
 a_{1} = \frac{ig/2}{i\Delta\omega + \gamma_{T}/2}a_{2} + \frac{i\sqrt{\gamma_{ex}}}{i\Delta\omega + \gamma_{T}/2}s_{in}'.  \tag{7.2}
 $$
 
-Substituting the first equation into the second one, we obtain:
+where $\Delta\omega = \omega_{c}-\omega$ is the detuning of the mode resonant frequency from the laser frequency. Substituting the first equation into the second one, we obtain:
 
 $$
 i\sqrt{\gamma_{ex}}a_{1} = s_{in}' \times \{-\frac{\gamma_{ex}/2}{i(\Delta\omega+g/2)+\gamma_{T}/2} - \frac{\gamma_{ex}/2}{i(\Delta\omega-g/2)+\gamma_{T}/2}\}.  \tag{8}
