@@ -99,7 +99,7 @@ $$
 a_{1} = \frac{ig/2}{i\Delta\omega + \gamma_{T}/2}a_{2} + \frac{i\sqrt{\gamma_{ex}}}{i\Delta\omega + \gamma_{T}/2}s_{in}'.  \tag{7.2}
 $$
 
-where $\Delta\omega = \omega_{c}-\omega$ is the detuning of the mode resonant frequency from the laser frequency. Substituting the first equation into the second one, we obtain:
+where $\Delta\omega = \omega$ is the detuning of the mode resonant frequency from the laser frequency. Substituting the first equation into the second one, we obtain:
 
 $$
 i\sqrt{\gamma_{ex}}a_{1} = s_{in}' \times \{-\frac{\gamma_{ex}/2}{i(\Delta\omega+g/2)+\gamma_{T}/2} - \frac{\gamma_{ex}/2}{i(\Delta\omega-g/2)+\gamma_{T}/2}\}.  \tag{8}
