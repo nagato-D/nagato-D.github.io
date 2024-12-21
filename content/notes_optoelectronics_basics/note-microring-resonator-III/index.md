@@ -15,17 +15,17 @@ In this note, we present a derivation of the coupled mode equation for an all-pa
 
 ![](/posts/note-microring-resonator-III/fig1.png)
 
-Left: all-pass ring; Right: add-drop ring [[1](#reference)].
+Figure 1 left: all-pass ring; right: add-drop ring [[1](#reference)].
 
 ## Coupled Mode Theory
 
 ---
 
-An all-pass ring is a ring resonator evanescently coupled to a nearby bus waveguide. Here, we denote the input optical field amplitude in the bus waveguide as $s_{in}$ and the output field amplitude as $s_{out}$. We use $a_{1}$ and $a_{2}$ to represent the amplitudes of a counter-clockwise mode and a clockwise mode, respectively. These modes are degenerate when there is no coupling between them, and their resonant frequencies are close to the laser pump frequency: $\omega_{1} = \omega_{2} \approx \omega$. The total power decay rate of the ring resonator is $\gamma_{T}$, which is the sum of the coupling-induced power decay rate $\gamma_{ex}$ and the intrinsic loss (absorption, radiation, and scattering) induced power decay rate $\gamma_{in}$, given by $\gamma_{T} = \gamma_{in} + \gamma_{ex}$. The out-coupling decay rate $\gamma_{ex}$ depends on the ring circumference and coupling ratio, and this relation will be explained in detail later.
+An all-pass ring is a ring resonator evanescently coupled to a nearby bus waveguide. Here, we denote the input optical field amplitude in the bus waveguide as $s_{in}$ and the output field amplitude as $s_{out}$. We use $a_{1}$ and $a_{2}$ to represent the amplitudes of a counter-clockwise mode and a clockwise mode, respectively. These modes are degenerate when there is no coupling between them, and their resonant frequencies are close to the laser pump frequency: $\omega_{c} \approx \omega$. The total power decay rate of the ring resonator is $\gamma_{T}$, which is the sum of the coupling-induced power decay rate $\gamma_{ex}$ and the intrinsic loss (absorption, radiation, and scattering) induced power decay rate $\gamma_{in}$, given by $\gamma_{T} = \gamma_{in} + \gamma_{ex}$. The out-coupling decay rate $\gamma_{ex}$ depends on the ring circumference and coupling ratio, and this relation will be explained in detail later.
 
 ### Derivation of coupled mode equation
 
-We use a phenomenological approach to derive the coupled mode equation for $a_{1}$ and $a_{2}$. In the absence of pump light, coupling loss, or backward mode coupling, each mode will oscillate at its resonant frequency and exhibits an exponential energy decay. Thus, the evolution of mode coefficients follows $a_{1,2} \propto \exp(-i\omega_{c} - \gamma_{T}/2)$. The corresponding equation of motion should be $da_{1,2}/dt = -(i\omega_{c}+\gamma_{T}/2)a_{1,2}$. Taking into account the backward mode coupling and input/output of the ring, the complete coupled mode equation takes the following form:
+We use a phenomenological approach to derive the coupled mode equation for $a_{1}$ and $a_{2}$. In the absence of pump light, coupling loss, and backward mode coupling, each mode will oscillate at its resonant frequency and exhibits an exponential energy decay. Thus, the evolution of mode coefficients follows $a_{1,2} \propto \exp(-i\omega_{c} - \gamma_{in}/2)$. The corresponding equation of motion should be $da_{1,2}/dt = -(i\omega_{c}+\gamma_{in}/2)a_{1,2}$. Taking into account the backward mode coupling and input/output of the ring, the complete coupled mode equation takes the following form:
 
 $$
 \frac{da_{1}}{dt} = -(i\omega_{c} + \frac{\gamma_{T}}{2})a_{1} + g_{12}a_{2} + \kappa s_{in},\\
@@ -34,20 +34,20 @@ $$
 
 Here, $g_{12}$, $g_{21}$, and $\kappa$ are coefficients that need to be determined.
 
-First, we determine $g_{12}$ and $g_{21}$. In the absence of coupling loss or intrinsic loss in the ring $\gamma_{T} = \gamma_{ex} = \gamma_{in} = 0$, the intracavity power should remain constant: $|a_{1}|^{2} + |a_{2}|^{2} = C$. We express the coupled mode equation in matrix form $d\mathbf{a}/dt = i\mathbf{H}\mathbf{a}$, where $\mathbf{H}$ must be a Hermitian matrix to ensure energy conservation. Hence, the matrix elements must satisfy $H_{12} = H_{21}^{ * }$, namely $-ig_{12} = (-ig_{21})^{*}$. For simplicity, we assume both $-ig_{12}$ and $-ig_{21}$ are real numbers, which means $-ig_{12} = -ig_{21} = g/2 \in \mathbb{R}$. Therefore, we can write $g_{12} = g_{21} = ig/2$, where $g$ is a real number representing the power coupling rate between the clockwise and counter-clockwise modes.
+First, we determine $g_{12}$ and $g_{21}$. In the absence of coupling loss and intrinsic loss in the ring $\gamma_{T} = \gamma_{ex} = \gamma_{in} = 0$, the intracavity power should remain constant: $|a_{1}|^{2} + |a_{2}|^{2} = C$. We express the coupled mode equation in matrix form $d\mathbf{a}/dt = i\mathbf{H}\mathbf{a}$, where $\mathbf{H}$ must be a Hermitian matrix to ensure energy conservation. Hence, the matrix elements must satisfy $H_{12} = H_{21}^{ * }$, namely $-ig_{12} = (-ig_{21})^{*}$. For simplicity, we assume both $-ig_{12}$ and $-ig_{21}$ are real numbers, which means $-ig_{12} = -ig_{21} = g/2 \in \mathbb{R}$. Therefore, we can write $g_{12} = g_{21} = ig/2$, where $g$ is a real number representing the power coupling rate between the clockwise and counter-clockwise modes.
 
-Next, we consider the out-coupling coefficient $\kappa$. Assuming no detuning and no mode coupling ($\Delta\omega = 0$ and $g = 0$) for simplicity, the evolution of the intracavity field is solely determined by the coupling loss. It is essential to note that coupling loss occurs only when light passes through the coupler, whereas intrinsic loss occurs throughout the ring. This distinction complicates our system modeling. However, we can apply the mean-field approximation, replacing the position-dependent coupling loss with a mean, uniformly distributed loss.
+Next, we consider the out-coupling coefficient $\kappa$. Assuming the cavity-laser detuning is sufficiently small and there is no mode coupling (roundtrip phase shift is around a multiple of $2\pi$ and $g = 0$) for simplicity, the evolution of the intracavity field is solely determined by the coupling loss and the amplitude of the pump field. It is essential to note that coupling loss occurs only when light passes through the coupler, whereas intrinsic loss occurs throughout the ring. This distinction complicates our system modeling. However, we can apply the mean-field approximation, replacing the position-dependent coupling loss with a mean, uniformly distributed loss.
 
 In each roundtrip time interval $\tau_{rt} = n_{g}L/c$, light in the ring resonator passes the coupler once. This results in the following change in the mode coefficient:
 
 $$
-\Delta a_{1} = i\sqrt{\theta}s_{in} + \sqrt{1-\theta}e^{-\alpha L/2}a_{1} - a_{1}.  \tag{2}
+\Delta a_{1} = i\sqrt{\theta}s_{in} + \sqrt{1-\theta}e^{-\alpha L/2-i\omega\tau_{rt}}a_{1} - a_{1}.  \tag{2}
 $$
 
-Here, $\theta$ represents the power coupling ratio and $\alpha$ is the power attenuation coefficient. To simplify this expression, we apply the mean-field approximation by introducing the substitution $\Delta a_{1} = \frac{da_{1}}{dt}\tau_{rt}$. This substitution assumes that the coupling loss causes a continuous change in the mode coefficient $a_{1}$, implying that the roundtrip coupling loss is averaged over the time interval $\tau_{rt}$. With this mean-field approximation substitution, Equation 2 transforms to:
+Here, $\theta$ represents the power coupling ratio and $\alpha$ is the power attenuation coefficient. Since the roundtrip phase shift is around a multiple of $2\pi$, we have $\exp(-i\omega\tau_{rt}) \approx 1$. To further simplify this expression, we apply the mean-field approximation by introducing the substitution $\Delta a_{1} = \frac{da_{1}}{dt}\tau_{rt}$. This substitution assumes that the coupling loss causes a continuous change in the mode coefficient $a_{1}$, implying that the roundtrip coupling loss is averaged over the time interval $\tau_{rt}$. With this mean-field approximation substitution, Equation 2 transforms to:
 
 $$
-\frac{da_{1}}{dt} = -\frac{\theta c}{2n_{g}L}a_{1} - \frac{\alpha c}{2n_{g}}a_{1} + i\frac{\sqrt{\theta}c}{n_{g}L}s_{in}.  \tag{3}
+\frac{da_{1}}{dt} = -i\omega a_{1} -\frac{\theta c}{2n_{g}L}a_{1} - \frac{\alpha c}{2n_{g}}a_{1} + i\frac{\sqrt{\theta}c}{n_{g}L}s_{in}.  \tag{3}
 $$
 
 In Equation 3, the first term represents the coupling loss, the second term denotes the intrinsic loss, and the third term corresponds to the gain. In deriving this equation, we have assumed the roundtrip change in $a$ is small and used the one-order approximation that $\sqrt{1-\theta}e^{-\alpha L/2} \approx 1 - \frac{\theta}{2} - \frac{\alpha L}{2}$. By comparing Equations 1 and 3, we can derive:
@@ -102,7 +102,7 @@ $$
 where $\Delta\omega = \omega$ is the detuning of the mode resonant frequency from the laser frequency. Substituting the first equation into the second one, we obtain:
 
 $$
-i\sqrt{\gamma_{ex}}a_{1} = s_{in}' \times \{-\frac{\gamma_{ex}/2}{i(\Delta\omega+g/2)+\gamma_{T}/2} - \frac{\gamma_{ex}/2}{i(\Delta\omega-g/2)+\gamma_{T}/2}\}.  \tag{8}
+i\sqrt{\gamma_{ex}}a_{1} = s_{in}' \times \[ -\frac{\gamma_{ex}/2}{i(\Delta\omega+g/2)+\gamma_{T}/2} - \frac{\gamma_{ex}/2}{i(\Delta\omega-g/2)+\gamma_{T}/2} \].  \tag{8}
 $$
 
 Next, substituting Equation 8 into the third equation of Equation 6, we find the transmission spectrum of the all-pass ring:
