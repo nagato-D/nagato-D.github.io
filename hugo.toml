@@ -6,7 +6,7 @@ theme = 'LoveIt'
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.62.0"
+    min = "0.119.0"
 
 # Menu config
 # 菜单配置
