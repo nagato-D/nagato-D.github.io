@@ -1,7 +1,7 @@
 +++
 title = 'Note on Deploying a Personal Website on Github'
 author = 'Di Yu'
-date = 2023-10-15
+date = 2025-02-04
 draft = false
 +++
 
@@ -45,10 +45,9 @@ Please refer to [here](/posts/note-deploy-personal-website/Note_deploy_website.p
 2. Go to repository's `settings` --> `action` --> `general` --> enable `Read and write permissions` --> `save`.
 
 ### Create a Github workflow
-1. Create an empty file in your local repository at `.github/workflows/hugo.yml`.
-2. Copy the YML specified in [Deploying a Blog Powered by Hugo to Github Pages w/ Custom Domain via Github Actions](https://theplaybook.dev/docs/deploy-hugo-to-github-pages/) to the `hugo.yml` file.
-3. Update the Hugo source link, `user.name`, and `user.email` in the `hugo.yml` file.
-4. Modify the `hugo.toml` file --> `baseURL = 'https://nagato-D.github.io/<repo_name>/'`.
+1. Create an empty file named `hugo.yaml` in your local repository at `.github/workflows/`.
+2. Copy the YAML code under 'Step 6' of [HUGO: Host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/) to the `hugo.yaml` file.
+3. Modify the Hugo version specified in `hugo.yaml` to match your local Hugo version (type in `hugo version` at terminal to check).
 
 ### Git push
 1. Run `git add .` --> `git commit -m "add the first test page"` --> `git push`.
