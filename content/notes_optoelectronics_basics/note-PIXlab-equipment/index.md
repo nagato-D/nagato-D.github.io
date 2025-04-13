@@ -1,6 +1,13 @@
-# Note on Equipment at PIXlab
++++
+title = 'Note on Equipment at PIXlab'
+author = 'Di Yu'
+date = 2025-04-13
+draft = false
++++
+
+<!-- # Note on Equipment at PIXlab
 **Created on** 2025-4-13\
-**Author** Di Yu (yudi.0211@foxmail.com)\
+**Author** Di Yu (yudi.0211@foxmail.com)\ -->
 
 ## Laser
 
