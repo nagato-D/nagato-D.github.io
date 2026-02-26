@@ -6,7 +6,7 @@ draft = false
 
 ## Biography
 
-I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) at the University of Hong Kong, advised by Prof. [Chao Xiang](https://chao-xiang.github.io/). Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Prof. [Kobus Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the Yingcai Honor College of University of Electronic Science and Technology of China in 2021.
+I am currently pursuing a Ph.D. in Electrical and Computer Engineering (ECE) at the University of Hong Kong, advised by Prof. [Chao Xiang](https://chao-xiang.github.io/). Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Prof. [Kobus Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the Yingcai Honor College of University of Electronic Science and Technology of China in 2021.
 
 ## Education
 
@@ -24,6 +24,7 @@ I am currently pursuing a Ph.D. in Electrical and Electronic Engineering (EEE) a
 
 ## News
 
+- 2026.02, our work [Resonator-enhanced Distributed Bragg Reflector Laser](http://) was accepted by **Light: Science & Applications**. This paper proposes a simple laser design that combines low noise, wavelength tunability, and operation robustness.
 - 2024.07, our work [Symmetry-Based Quantum Circuit Mapping
 ](https://arxiv.org/abs/2310.18026) was accepted by **Physical Review Applied**. This paper proposes an efficient algorithm of quantum circuit mapping by utilizing symmetries inherent in quantum hardware.
 - 2024.01, our work [Impact of transforming interface geometry on edge states in valley photonic crystals](https://arxiv.org/abs/2310.00858) was accepted by **Physical Review Letters**. This paper establishes limitations of topological protection in valley photonic crystals.
