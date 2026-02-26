@@ -10,7 +10,7 @@ I am currently pursuing a Ph.D. in Electrical and Computer Engineering (ECE) at 
 
 ## Education
 
-**Ph.D.** in Electrical and Electronic Engineering, HKU
+**Ph.D.** in Electrical and Computer Engineering, HKU
 
 **M.S.** in Applied Physics, TU Delft
 
