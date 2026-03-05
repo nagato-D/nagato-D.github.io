@@ -1,55 +1,6 @@
-baseURL = 'https://nagato-D.github.io/'
-languageCode = 'en-us'
-title = 'Di Yu Homepage'
-theme = 'LoveIt'
-
 [module]
   [module.hugoVersion]
-    extended = true
-    min = "0.62.0"
-
-# Menu config
-# 菜单配置
-[menu]
-
-  [[menu.main]]
-    weight = 1
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
-    post = ""
-    name = "Posts"
-    url = "/posts/"
-    # title will be shown when you hover on this menu link
-    # 当您将鼠标悬停在此菜单链接上时, 将显示标题
-    title = ""
-  [[menu.main]]
-    weight = 2
-    identifier = "publications"
-    pre = ""
-    post = ""
-    name = "Publications"
-    url = "/publications/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "patents"
-    pre = ""
-    post = ""
-    name = "Patents"
-    url = "/patents/"
-    title = ""
-  [[menu.main]]
-  weight = 4
-  identifier = "favorites"
-  pre = ""
-  post = ""
-  name = "Favorites"
-  url = "/favorites/"
-  title = ""
+    min = "0.128.0"
 
 [params]
   # site default theme ["auto", "light", "dark"]
@@ -57,7 +8,7 @@ theme = 'LoveIt'
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = ""
+  gitRepo = "https://nagato-D.github.io/"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
@@ -68,13 +19,20 @@ theme = 'LoveIt'
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
   # 网站标题, 用于 Open Graph 和 Twitter Cards
-  title = "Di Yu's Homepage"
+  title = "Di Yu Homepage"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
-  description = "Di Yu's Homepage"
+  description = ""
   # website images for Open Graph and Twitter Cards
   # 网站图片, 用于 Open Graph 和 Twitter Cards
   images = []
+
+  # Author config
+  # 作者配置
+  [params.author]
+    name = "xxxx"
+    email = ""
+    link = ""
 
   # Header config
   # 页面头部导航栏配置
@@ -93,7 +51,7 @@ theme = 'LoveIt'
       logo = ""
       # title name
       # 标题名称
-      name = "Di Yu's Homepage"
+      name = "Di Yu Homepage"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = ""
@@ -122,7 +80,7 @@ theme = 'LoveIt'
     author = true
     # site creation time
     # 网站创立年份
-    since = 2023
+    since = 2022
     # ICP info only in China (HTML format is supported)
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
     icp = ""
@@ -161,7 +119,7 @@ theme = 'LoveIt'
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "Di Yu's Homepage"
+    title = "My cool site"
     # whether to omit favicon resource links
     # 是否隐藏网站图标资源链接
     noFavicon = false
@@ -229,7 +187,7 @@ theme = 'LoveIt'
       title = "Di Yu"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "PhD Candidate in EEE, HKU"
+      subtitle = "PhD Candidate in ECE, HKU"
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = false
@@ -251,7 +209,7 @@ theme = 'LoveIt'
   [params.social]
     GitHub = "nagato-D"
     Linkedin = "di-yu-4179701a1"
-    Twitter = ""
+    X = ""
     Instagram = ""
     Facebook = ""
     Telegram = ""
@@ -317,10 +275,18 @@ theme = 'LoveIt'
     ORCID = ""
     Pleroma = ""
     Kaggle = ""
-    MediaWiki= ""
+    MediaWiki = ""
     Plume = ""
     HackTheBox = ""
-    RootMe= ""
+    RootMe = ""
+    Malt = ""
+    TikTok = ""
+    TryHackMe = ""
+    Codeberg = ""
+    HuggingFace = ""
+    Threads = ""
+    LeetCode = ""
+    LeetCodeCN = ""
     Email = "yudi.0211@foxmail.com"
     Phone = ""
     RSS = ""
@@ -376,10 +342,13 @@ theme = 'LoveIt'
       # the maximum number of lines of displayed code by default
       # 默认展开显示的代码行数
       maxShownLines = 50
+    [params.page.code.render]
+      goat = true
+      mermaid = true
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     # KaTeX 数学公式配置 (KaTeX https://katex.org/)
     [params.page.math]
-      enable = true
+      enable = false
       # default inline delimiter is $ ... $ and \( ... \)
       # 默认行内定界符是 $ ... $ 和 \( ... \)
       inlineLeftDelimiter = ""
@@ -421,30 +390,33 @@ theme = 'LoveIt'
     # Social share links in post page
     # 文章页面的分享信息设置
     [params.page.share]
-      enable = false
-      Twitter = true
+      enable = true
+      X = true
+      Threads = true
       Facebook = true
       Linkedin = false
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = false
+      HackerNews = true
       Reddit = false
       VK = false
       Buffer = false
       Xing = false
-      Line = false
+      Line = true
       Instapaper = false
       Pocket = false
       Flipboard = false
-      Weibo = false
+      Weibo = true
       Blogger = false
-      Baidu = true
+      Baidu = false
       Odnoklassniki = false
       Evernote = false
       Skype = false
       Trello = false
+      Diaspora = true
       Mix = false
+      Telegram = true
     # Comment config
     # 评论系统设置
     [params.page.comment]
@@ -611,13 +583,12 @@ theme = 'LoveIt'
   # Analytics config
   # 网站分析配置
   [params.analytics]
-    enable = false
     # Google Analytics
     [params.analytics.google]
       id = ""
-      # whether to anonymize IP
-      # 是否匿名化用户 IP
-      anonymizeIP = true
+      # whether to respect the browser’s “do not track” setting
+      # 是否遵循浏览器的 “Do Not Track” 设置
+      respectDoNotTrack = false
     # Fathom Analytics
     [params.analytics.fathom]
       id = ""
@@ -666,3 +637,50 @@ theme = 'LoveIt'
     # whether to use object-fit-images to be compatible with older browsers
     # 是否使用 object-fit-images 来兼容旧式浏览器
     objectFit = false
+
+# Menu config
+# 菜单配置
+[menu]
+
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    # 当您将鼠标悬停在此菜单链接上时, 将显示标题
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "publications"
+    pre = ""
+    post = ""
+    name = "Publications"
+    url = "/publications/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "patents"
+    pre = ""
+    post = ""
+    name = "Patents"
+    url = "/patents/"
+    title = ""
+  [[menu.main]]
+  weight = 4
+  identifier = "favorites"
+  pre = ""
+  post = ""
+  name = "Favorites"
+  url = "/favorites/"
+  title = ""
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

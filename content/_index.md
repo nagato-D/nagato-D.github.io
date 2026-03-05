@@ -24,9 +24,9 @@ I am currently pursuing a Ph.D. in Electrical and Computer Engineering (ECE) at 
 
 ## News
 
-- 2026.02, our work [Resonator-enhanced Distributed Bragg Reflector Laser](http://) was accepted by **Light: Science & Applications**. This paper proposes a simple laser design that combines low noise, wavelength tunability, and operation robustness.
+- 2026.02, our work [Resonator-enhanced Distributed Bragg Reflector Laser](https://www.nature.com/articles/s41377-026-02249-x) was accepted by **Light: Science & Applications**. This paper proposes a simple yet effective laser design that combines low phase noise, wavelength tunability, and operation robustness.
 - 2024.07, our work [Symmetry-Based Quantum Circuit Mapping
-](https://arxiv.org/abs/2310.18026) was accepted by **Physical Review Applied**. This paper proposes an efficient algorithm of quantum circuit mapping by utilizing symmetries inherent in quantum hardware.
-- 2024.01, our work [Impact of transforming interface geometry on edge states in valley photonic crystals](https://arxiv.org/abs/2310.00858) was accepted by **Physical Review Letters**. This paper establishes limitations of topological protection in valley photonic crystals.
+](https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.22.024029) was accepted by **Physical Review Applied**. This paper proposes an efficient algorithm of quantum circuit mapping by utilizing symmetries inherent in quantum hardware.
+- 2024.01, our work [Impact of transforming interface geometry on edge states in valley photonic crystals](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.116901) was accepted by **Physical Review Letters**. This paper establishes limitations of topological protection in valley photonic crystals.
 
 ![](https://www.easycounter.com/counter.php?nagato) unique visitors since Oct. 2024
