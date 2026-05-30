@@ -8,6 +8,13 @@ draft = false
 
 ---
 
+## 2026
+{{< admonition note "Resonator-Enhanced Distributed Bragg Reflector Lasers" >}}
+**Di Yu**, Zhaoting Geng, Yuhao Huang, Yitian Tong, Yu Xia, Mingfei Liu, Yaoran Huang, Chao Xiang\
+[Light: Science & Applications **15**, 142 (2026)]()\
+:(fa-regular fa-file-pdf): :(fa-regular fa-file-pdf): [Journal PDF](https://www.nature.com/articles/s41377-026-02249-x) | :(fa-solid fa-code): [Codes](https://doi.org/10.5281/zenodo.15875618)
+{{< /admonition >}}
+
 ## 2024
 {{< admonition note "Symmetry-Based Quantum Circuit Mapping" >}}
 **Di Yu**, Kun Fang\
