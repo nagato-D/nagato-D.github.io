@@ -6,6 +6,9 @@ public/
 node_modules/
 build/
 
+# Simulation downloads are shared through OneDrive
+/static/posts/note-MZM-design/
+
 ## OS Files
 # Windows
 Thumbs.db
