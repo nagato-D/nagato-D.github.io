@@ -718,3 +718,15 @@ defaultContentLanguageInSubdir = false
   name = "兴趣收藏"
   pageRef = "/favorites"
   weight = 4
+
+[[languages.en.menu.main]]
+  identifier = "thoughts"
+  name = "Thoughts"
+  pageRef = "/thoughts"
+  weight = 5
+
+[[languages.zh-cn.menu.main]]
+  identifier = "thoughts"
+  name = "随想"
+  pageRef = "/thoughts"
+  weight = 5

@@ -1,5 +1,5 @@
 +++
-title = "Thoughts on Jensen Huang"
+title = 'My Take on the "Leather Jacket Guy"'
 author = "Di Yu"
 date = 2026-11-13
 draft = false
