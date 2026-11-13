@@ -2,3 +2,25 @@
 // Custom style
 // 自定义样式
 // ==============================
+
+// Keep language switching visible on both desktop and mobile.
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  white-space: nowrap;
+  font-size: .875rem;
+  border-radius: .25rem;
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+}
+
+#header-mobile .mobile-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}

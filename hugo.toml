@@ -1,3 +1,8 @@
+baseURL = "https://nagato-d.github.io/"
+title = "Di Yu Homepage"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
 [module]
   [module.hugoVersion]
     min = "0.128.0"
@@ -638,49 +643,78 @@
     # 是否使用 object-fit-images 来兼容旧式浏览器
     objectFit = false
 
-# Menu config
-# 菜单配置
-[menu]
-
-  [[menu.main]]
-    weight = 1
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
-    post = ""
-    name = "Posts"
-    url = "/posts/"
-    # title will be shown when you hover on this menu link
-    # 当您将鼠标悬停在此菜单链接上时, 将显示标题
-    title = ""
-  [[menu.main]]
-    weight = 2
-    identifier = "publications"
-    pre = ""
-    post = ""
-    name = "Publications"
-    url = "/publications/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "patents"
-    pre = ""
-    post = ""
-    name = "Patents"
-    url = "/patents/"
-    title = ""
-  [[menu.main]]
-  weight = 4
-  identifier = "favorites"
-  pre = ""
-  post = ""
-  name = "Favorites"
-  url = "/favorites/"
-  title = ""
-
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+# Keep the original English URLs; Chinese translations live under /zh-cn/.
+[languages.en]
+  languageCode = "en"
+  languageName = "English"
+  title = "Di Yu Homepage"
+  weight = 1
+  [languages.en.params]
+    description = "Di Yu's personal website: research, publications, and notes on optoelectronics and computer science."
+
+[languages.zh-cn]
+  languageCode = "zh-CN"
+  languageName = "简体中文"
+  title = "Di Yu 的个人主页"
+  weight = 2
+  hasCJKLanguage = true
+  [languages.zh-cn.params]
+    title = "Di Yu 的个人主页"
+    description = "Di Yu 的个人主页：科研进展、学术论文、光电子学与计算机科学笔记。"
+  [languages.zh-cn.params.header.title]
+    name = "Di Yu 的个人主页"
+  [languages.zh-cn.params.home.profile]
+    title = "Di Yu"
+    subtitle = "香港大学电机电子工程系博士生"
+
+[[languages.en.menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  pageRef = "/posts"
+  weight = 1
+
+[[languages.en.menu.main]]
+  identifier = "publications"
+  name = "Publications"
+  pageRef = "/publications"
+  weight = 2
+
+[[languages.en.menu.main]]
+  identifier = "patents"
+  name = "Patents"
+  pageRef = "/patents"
+  weight = 3
+
+[[languages.en.menu.main]]
+  identifier = "favorites"
+  name = "Favorites"
+  pageRef = "/favorites"
+  weight = 4
+
+[[languages.zh-cn.menu.main]]
+  identifier = "posts"
+  name = "文章笔记"
+  pageRef = "/posts"
+  weight = 1
+
+[[languages.zh-cn.menu.main]]
+  identifier = "publications"
+  name = "学术论文"
+  pageRef = "/publications"
+  weight = 2
+
+[[languages.zh-cn.menu.main]]
+  identifier = "patents"
+  name = "专利"
+  pageRef = "/patents"
+  weight = 3
+
+[[languages.zh-cn.menu.main]]
+  identifier = "favorites"
+  name = "兴趣收藏"
+  pageRef = "/favorites"
+  weight = 4

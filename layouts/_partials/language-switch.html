@@ -1,0 +1,28 @@
+{{- /* A real link works without JavaScript and keeps translated pages paired. */ -}}
+{{- $page := . -}}
+{{- if hugo.IsMultilingual -}}
+    {{- range .Sites -}}
+        {{- if ne .Language.Lang $page.Language.Lang -}}
+            {{- $target := .Home -}}
+            {{- with $page.CurrentSection -}}
+                {{- with ($target.Site.GetPage .Path) -}}
+                    {{- $target = . -}}
+                {{- end -}}
+            {{- end -}}
+            {{- range $page.AllTranslations -}}
+                {{- if eq .Language.Lang $target.Language.Lang -}}
+                    {{- $target = . -}}
+                {{- end -}}
+            {{- end -}}
+            {{- $label := .Language.LanguageName -}}
+            {{- $title := "Switch to English" -}}
+            {{- if eq .Language.Lang "zh-cn" -}}
+                {{- $label = "中文" -}}
+                {{- $title = "切换到中文" -}}
+            {{- end -}}
+            <a class="menu-item language-switch" href="{{ $target.RelPermalink }}" lang="{{ .Language.LanguageCode }}" hreflang="{{ .Language.LanguageCode }}" title="{{ $title }}" aria-label="{{ $title }}">
+                <i class="fas fa-globe" aria-hidden="true"></i><span>{{ $label }}</span>
+            </a>
+        {{- end -}}
+    {{- end -}}
+{{- end -}}

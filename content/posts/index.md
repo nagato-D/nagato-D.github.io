@@ -6,7 +6,7 @@ lastmod: 2026-03-01T21:57:40+08:00
 draft: false
 author: "Di Yu"
 authorLink: "https://nagato-d.github.io"
-description: "List of post catigories."
+description: "Browse notes by topic."
 images: []
 resources:
 - name: "featured-image"

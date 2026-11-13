@@ -1,4 +1,14 @@
 {{- $destination := .Destination -}}
+{{- $url := urls.Parse $destination -}}
+{{- $siteURL := urls.Parse .Page.Site.BaseURL -}}
+{{- $internal := or (and (not $url.IsAbs) (not $url.Host)) (eq $url.Host $siteURL.Host) (eq $url.Host "nagato-d.github.io") -}}
+{{- if and $internal $url.Path -}}
+    {{- with .Page.GetPage $url.Path -}}
+        {{- $destination = .RelPermalink -}}
+        {{- with $url.RawQuery -}}{{- $destination = printf "%s?%s" $destination . -}}{{- end -}}
+        {{- with $url.Fragment -}}{{- $destination = printf "%s#%s" $destination . -}}{{- end -}}
+    {{- end -}}
+{{- end -}}
 {{- with dict "Path" $destination "Resources" .Page.Resources | partial "function/resource.html" -}}
     {{- $destination = .RelPermalink -}}
 {{- end -}}

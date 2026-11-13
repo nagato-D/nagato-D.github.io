@@ -7,29 +7,30 @@ draft = false
 
 ---
 
-Hello，你好，こんにちは！
+Hello, hi, and konnichiwa!
 
-不知不觉时间已经来到了 2024 年的最后一个季度。大家过得还好吗？
+Before we knew it, we reached the final quarter of 2024. How is everyone doing?
 
-虽然我们最近要年终冲绩效，但番剧分享还是得坚持 :D
+Even though we're busy chasing our year-end targets, the anime recommendations must go on :D
 
-这里推荐 2018 年播出 ["少女⭐歌剧 Revue Starlight"](https://www.bilibili.com/bangumi/play/ss24622?spm_id_from=333.337.0.0)
+This time, I recommend ["Revue Starlight"](https://www.bilibili.com/bangumi/play/ss24622?spm_id_from=333.337.0.0), which aired in 2018.
 
 {{< image src="/posts/note-anime-2024Q4/anime_1.jpg" width=800 >}}
 
-推荐理由
-- 校园偶像类的 EVA
-- 业界顶尖的制作水平
-- 饱满丰富的人物塑造
-- 环环相扣的剧情伏笔
-- 百合大法好 (+10086)
+Reasons to watch:
 
-节选片段 1 (Bananice 1V6 珍贵影像)
+- An Evangelion of the school-idol genre.
+- Some of the industry's finest production values.
+- Rich, fully realized characters.
+- Carefully interconnected plot foreshadowing.
+- Yuri is wonderful (+10086).
+
+Clip 1 (rare footage of Bananice in a 1-vs-6 showdown):
 
 {{< bilibili id=BV1JV411T7Ro >}}
 
-节选片段 2 (难以描述)
+Clip 2 (hard to describe):
 
 {{< bilibili id=BV1CP4y1H7J4 >}}
 
-片段 2 的字幕在 B 站原视频中会显示~
+Subtitles for Clip 2 are available in the original video on Bilibili.

@@ -1,5 +1,5 @@
 +++
-title = 'Homgpage'
+title = 'Homepage'
 date = 2023-10-20T22:57:03+08:00
 draft = false
 +++
@@ -20,7 +20,7 @@ I am currently pursuing a Ph.D. in Electrical and Computer Engineering (ECE) at 
 
 **Baidu Inc.** R&D internship in quantum AI, supervised by Prof. [Kun Fang](https://scholar.google.com/citations?user=YlfYNwcAAAAJ&hl=en&inst=6173373803492361994&oi=ao) and Prof. [Xin Wang](https://www.xinwang.info/).
 
-**Bilibili Inc.** disciplinary committee member (风纪委员).
+**Bilibili Inc.** disciplinary committee member.
 
 ## News
 

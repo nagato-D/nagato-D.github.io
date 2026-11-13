@@ -25,5 +25,5 @@ draft = false
 {{< admonition note "Impact of Transforming Interface Geometry on Edge States in Valley Photonic Crystals" >}}
 **Di Yu**, Sonakshi Arora, L. Kuipers\
 [Physical Review Letters **132**, 116901 (2024)](https://doi.org/10.1103/PhysRevLett.132.116901)\
-:(fa-regular fa-file-pdf): [arXiv PDF](https://arxiv.org/pdf/2310.00858.pdf) | :(fa-regular fa-file-pdf): [Journal PDF](https://doi.org/10.1103/PhysRevLett.132.116901) | :(fa-solid fa-link): [Post](https://nagato-d.github.io/posts/post-valley-phc/)
+:(fa-regular fa-file-pdf): [arXiv PDF](https://arxiv.org/pdf/2310.00858.pdf) | :(fa-regular fa-file-pdf): [Journal PDF](https://doi.org/10.1103/PhysRevLett.132.116901) | :(fa-solid fa-link): [Post](/notes_progress/note-valley-phc/)
 {{< /admonition >}}
