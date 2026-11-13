@@ -29,3 +29,5 @@ lightgallery: true
 - [Practical Skills](/notes_skills/)
 
 - [Anime Recommendations](/notes_anime/)
+
+- [Thoughts](/thoughts/)
