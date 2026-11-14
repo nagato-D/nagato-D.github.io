@@ -39,4 +39,4 @@ python -m http.server 1314 --bind 127.0.0.1 --directory ../.tools/al-folio-outpu
 
 ## Theme attribution
 
-al-folio is MIT licensed. Its original styles and scripts come from the pinned theme gem. `site/AL_FOLIO_LICENSE` preserves its license; the footer retains attribution. Local overrides add bilingual navigation and metadata, compatibility with the original content format, and article layout adaptations. Original content and attachments retain their existing rights.
+al-folio is MIT licensed. Its original styles and scripts come from the pinned theme gem. `site/AL_FOLIO_LICENSE` preserves its copyright notice and license. Local overrides add bilingual navigation and metadata, compatibility with the original content format, and article layout adaptations. Original content and attachments retain their existing rights.

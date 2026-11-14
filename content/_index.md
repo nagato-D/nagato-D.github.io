@@ -4,14 +4,14 @@ date = 2023-10-20T22:57:03+08:00
 draft = false
 +++
 
-I am currently pursuing a Ph.D. in Electrical and Computer Engineering (ECE) at the University of Hong Kong, advised by Prof. [Chao Xiang](https://chao-xiang.github.io/). Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Prof. [Kobus Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics-physics fundamental science at the Yingcai Honor College of University of Electronic Science and Technology of China in 2021.
+I am currently pursuing a Ph.D. in Electrical and Computer Engineering (ECE) at the University of Hong Kong, advised by Prof. [Chao Xiang](https://chao-xiang.github.io/). Prior to this, I earned my M.S. degree in applied physics from Delft University of Technology in 2023, where I collaborated with Prof. [Kobus Kuipers](https://kuiperslab.tudelft.nl/). Before that, I completed my B.S. in mathematics and physics at the Yingcai Honor College of University of Electronic Science and Technology of China in 2021.
 
 My experience includes an R&D internship in quantum AI at Baidu Inc., under the supervision of Prof. [Kun Fang](https://scholar.google.com/citations?user=YlfYNwcAAAAJ&hl=en) and Prof. [Xin Wang](https://www.xinwang.info/), as well as serving on Bilibili Inc.’s disciplinary committee.
 
 ## news
 
-- 2026.02, our work [Resonator-enhanced Distributed Bragg Reflector Laser](https://www.nature.com/articles/s41377-026-02249-x) was accepted by **Light: Science & Applications**.
-- 2024.07, our work [Symmetry-Based Quantum Circuit Mapping](https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.22.024029) was accepted by **Physical Review Applied**.
-- 2024.01, our work [Impact of transforming interface geometry on edge states in valley photonic crystals](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.116901) was accepted by **Physical Review Letters**.
+- 2026.02, Our work [Resonator-enhanced Distributed Bragg Reflector Laser](https://www.nature.com/articles/s41377-026-02249-x) was accepted by **Light: Science & Applications**.
+- 2024.07, Our work [Symmetry-Based Quantum Circuit Mapping](https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.22.024029) was accepted by **Physical Review Applied**.
+- 2024.01, Our work [Impact of transforming interface geometry on edge states in valley photonic crystals](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.116901) was accepted by **Physical Review Letters**.
 
 ![](https://www.easycounter.com/counter.php?nagato) unique visitors since Oct. 2024

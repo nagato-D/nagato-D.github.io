@@ -4,7 +4,7 @@ date = 2023-10-20T22:57:03+08:00
 draft = false
 +++
 
-我目前在香港大学电机电子工程系（ECE）攻读博士学位，导师为 [Chao Xiang](https://chao-xiang.github.io/) 教授。此前，我于 2023 年获得代尔夫特理工大学应用物理学硕士学位，并与 [Kobus Kuipers](https://kuiperslab.tudelft.nl/) 教授合作开展研究。2021 年，我毕业于电子科技大学英才实验学院，获得数理基础科学学士学位。
+我目前在香港大学电机电子工程系（ECE）攻读博士学位，导师为 [Chao Xiang](https://chao-xiang.github.io/) 教授。此前，我于 2023 年获得代尔夫特理工大学应用物理学硕士学位，并与 [Kobus Kuipers](https://kuiperslab.tudelft.nl/) 教授合作开展研究。2021 年，我毕业于电子科技大学英才实验学院，获得数学与物理学学士学位。
 
 我的经历还包括在百度从事量子人工智能研发实习，指导老师为 [Kun Fang](https://scholar.google.com/citations?user=YlfYNwcAAAAJ&hl=en) 教授和 [Xin Wang](https://www.xinwang.info/) 教授，以及担任哔哩哔哩风纪委员。
 
