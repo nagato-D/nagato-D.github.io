@@ -181,7 +181,7 @@ module PreservedHugoContent
       return html unless @entry[:key] == "home"
 
       fragment = Nokogiri::HTML.fragment(html)
-      heading = fragment.css("h2").find { |node| ["News", "最新动态"].include?(node.text.strip) }
+      heading = fragment.css("h2").find { |node| ["news", "最新动态"].include?(node.text.strip.downcase) }
       list = heading&.next_element
       return html unless list&.name == "ul"
 

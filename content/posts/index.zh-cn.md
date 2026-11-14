@@ -28,6 +28,3 @@ lightgallery: true
 
 - [实用技能](/notes_skills/)
 
-- [动漫推荐](/notes_anime/)
-
-- [随想](/thoughts/)

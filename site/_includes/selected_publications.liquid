@@ -1,0 +1,33 @@
+{% assign locale = page.lang | default: 'en' %}
+{% if locale == 'zh-cn' %}{% assign publications_url = '/zh-cn/publications/' %}{% else %}{% assign publications_url = '/publications/' %}{% endif %}
+<section class="home-selected-publications" aria-labelledby="selected-publications">
+  <h2 id="selected-publications"><a href="{{ publications_url | relative_url }}">{% if locale == 'zh-cn' %}精选论文{% else %}selected publications{% endif %}</a></h2>
+  <div class="publications">
+    <ol class="bibliography">
+      {% for paper in site.data.selected_publications %}
+      {% assign note_url = paper.note %}
+      {% if locale == 'zh-cn' %}{% assign note_url = paper.note | prepend: '/zh-cn' %}{% endif %}
+      <li>
+        <div class="row">
+          <div class="col-sm-3 abbr">
+            <abbr class="badge rounded w-100" title="{{ paper.journal | escape }}">{{ paper.abbreviation }}</abbr>
+            <a href="{{ note_url | relative_url }}" aria-label="{% if locale == 'zh-cn' %}阅读 RE-DBR 激光器研究笔记{% else %}Read the RE-DBR laser research note{% endif %}"><img class="preview z-depth-1 rounded" src="{{ paper.preview | relative_url }}" width="2512" height="1798" alt="{% if locale == 'zh-cn' %}RE-DBR 激光器结构与性能示意图{% else %}RE-DBR laser architecture and performance diagram{% endif %}" loading="lazy"></a>
+          </div>
+          <div class="col-sm-9" id="{{ paper.id }}">
+            <div class="title"><a href="{{ paper.html }}">{{ paper.title }}</a></div>
+            <div class="author">{% for author in paper.authors %}{% if author.self %}<em>{{ author.name }}</em>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+            <div class="periodical"><em>{{ paper.journal }}</em> <strong>{{ paper.volume }}</strong>, {{ paper.article }} ({{ paper.year }})</div>
+            <p class="publication-summary">{{ paper.summary[locale] }}</p>
+            <div class="links">
+              <a href="{{ paper.doi }}" class="btn btn-sm z-depth-0">DOI</a>
+              <a href="{{ paper.html }}" class="btn btn-sm z-depth-0">{% if locale == 'zh-cn' %}期刊全文{% else %}Full text{% endif %}</a>
+              <a href="{{ paper.code }}" class="btn btn-sm z-depth-0">{% if locale == 'zh-cn' %}数据与代码{% else %}Data &amp; code{% endif %}</a>
+              <a href="{{ note_url | relative_url }}" class="btn btn-sm z-depth-0">{% if locale == 'zh-cn' %}研究笔记{% else %}Research note{% endif %}</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

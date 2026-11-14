@@ -25,6 +25,14 @@ html[lang="zh-CN"] body { font-family: Roboto, "Noto Sans SC", "Microsoft YaHei"
 .home-news .table { color: var(--global-text-color); margin-bottom: 0; }
 .home-news th { width: 20%; padding: .55rem 1.25rem .55rem 0; white-space: nowrap; font-weight: 500; }
 .home-news td { padding: .55rem 0; }
+.home-selected-publications { margin-top: 2rem; line-height: 1.7; }
+.home-selected-publications h2 a, .home-selected-publications .title a { color: inherit; }
+.home-selected-publications .publications { margin-top: 1.25rem; }
+.home-selected-publications .preview { width: 100%; height: auto; background: white; }
+.home-selected-publications .publication-summary { margin: .65rem 0; }
+.home-selected-publications .links, .publication-links { display: flex; flex-wrap: wrap; gap: .5rem; }
+.publication-links a { border: 1px solid var(--global-text-color); border-radius: 3px; padding: .2rem .75rem; color: var(--global-text-color); font-size: .875rem; text-decoration: none; }
+.publication-links a:hover, .publication-links a:focus-visible { border-color: var(--global-theme-color); color: var(--global-theme-color); }
 .home-browse { display: flex; flex-wrap: wrap; gap: 1rem 2rem; border-top: 1px solid var(--global-divider-color); margin-top: 2rem; padding-top: 1.2rem; }
 .note-page, .content-page { max-width: 930px; margin: 0 auto; }
 .note-page .post-title { font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.3; margin-top: .8rem; }
@@ -71,6 +79,7 @@ html[lang="zh-CN"] body { font-family: Roboto, "Noto Sans SC", "Microsoft YaHei"
   .profile-links { gap: .6rem 1rem; font-size: .88rem; }
   .home-profile { float: none !important; width: min(100%, 280px); margin: 0 auto 1.5rem; }
   .home-news th { width: auto; padding-right: 1rem; font-size: .88rem; }
+  .home-selected-publications .abbr { max-width: 220px; }
   .article-content { line-height: 1.8; }
 }
 

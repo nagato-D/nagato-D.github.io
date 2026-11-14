@@ -10,8 +10,8 @@ draft = false
 
 ## 最新动态
 
-- 2026.02，我们的研究 [Resonator-enhanced Distributed Bragg Reflector Laser（谐振腔增强型分布式布拉格反射激光器）](https://www.nature.com/articles/s41377-026-02249-x) 被 **Light: Science & Applications** 接收。论文提出了一种简单而有效的激光器设计，兼具低相位噪声、波长可调谐性和运行稳定性。
-- 2024.07，我们的研究 [Symmetry-Based Quantum Circuit Mapping（基于对称性的量子电路映射）](https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.22.024029) 被 **Physical Review Applied** 接收。论文利用量子硬件的内在对称性，提出了一种高效的量子电路映射算法。
-- 2024.01，我们的研究 [Impact of Transforming Interface Geometry on Edge States in Valley Photonic Crystals（界面几何变换对谷光子晶体边缘态的影响）](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.116901) 被 **Physical Review Letters** 接收。论文揭示了谷光子晶体中拓扑保护的局限性。
+- 2026.02，我们的研究 [Resonator-enhanced Distributed Bragg Reflector Laser（谐振腔增强型分布式布拉格反射激光器）](https://www.nature.com/articles/s41377-026-02249-x) 被 **Light: Science & Applications** 接收。
+- 2024.07，我们的研究 [Symmetry-Based Quantum Circuit Mapping（基于对称性的量子电路映射）](https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.22.024029) 被 **Physical Review Applied** 接收。
+- 2024.01，我们的研究 [Impact of Transforming Interface Geometry on Edge States in Valley Photonic Crystals（界面几何变换对谷光子晶体边缘态的影响）](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.116901) 被 **Physical Review Letters** 接收。
 
 ![](https://www.easycounter.com/counter.php?nagato) 自 2024 年 10 月以来的独立访客数

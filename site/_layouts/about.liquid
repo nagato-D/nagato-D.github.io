@@ -18,7 +18,8 @@ layout: default
     </div>
     {{ content }}
   </article>
+  {% include selected_publications.liquid %}
   <div class="home-browse">
-    {% if page.lang == 'zh-cn' %}<a href="/zh-cn/posts/">浏览研究笔记 <span aria-hidden="true">→</span></a><a href="/zh-cn/thoughts/">阅读随想 <span aria-hidden="true">→</span></a>{% else %}<a href="/posts/">Browse research notes <span aria-hidden="true">→</span></a><a href="/thoughts/">Read thoughts <span aria-hidden="true">→</span></a>{% endif %}
+    {% if page.lang == 'zh-cn' %}<a href="/zh-cn/posts/">浏览研究笔记 <span aria-hidden="true">→</span></a>{% else %}<a href="/posts/">Browse research notes <span aria-hidden="true">→</span></a>{% endif %}
   </div>
 </div>

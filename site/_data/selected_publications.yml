@@ -1,0 +1,24 @@
+- id: yu2026redbr
+  title: Resonator-enhanced distributed Bragg reflector lasers
+  authors:
+    - {name: Di Yu, self: true}
+    - {name: Zhaoting Geng}
+    - {name: Yuhao Huang}
+    - {name: Yitian Tong}
+    - {name: Yu Xia}
+    - {name: Mingfei Liu}
+    - {name: Yaoran Huang}
+    - {name: Chao Xiang}
+  journal: "Light: Science & Applications"
+  abbreviation: Light Sci. Appl.
+  volume: 15
+  article: 142
+  year: 2026
+  doi: https://doi.org/10.1038/s41377-026-02249-x
+  html: https://www.nature.com/articles/s41377-026-02249-x
+  code: https://doi.org/10.5281/zenodo.15875618
+  note: /notes_progress/note-redbr-laser/
+  preview: /posts/post-ReDBR-laser/fig1.png
+  summary:
+    en: "A hybrid integrated laser using a grating-assisted ring resonator, with a 24 Hz intrinsic linewidth, a 34 GHz mode-hop-free tuning range, and turnkey operation."
+    zh-cn: "利用光栅辅助环形谐振腔构建混合集成激光器，实现 24 Hz 本征线宽、34 GHz 无跳模调谐范围和稳定即启运行。"

@@ -14,6 +14,7 @@ The site uses [al-folio](https://github.com/alshedivat/al-folio), with published
 - `static/posts/note-MZM-design/` 中原本未跟踪的本地仿真资源继续保留在本机和备份中，下载沿用笔记中的 OneDrive 链接，不加入 Git 或 Pages。
 - 导航：`site/_data/navigation.yml`；配置：`site/_config.yml`；布局覆盖：`site/_layouts/` 与 `site/_includes/`。
 - 首页照片：`site/assets/img/di-yu.jpg`。News 继续编辑 `content/_index.md` / `_index.zh-cn.md` 的 `News` / `最新动态` 列表，日期使用 `YYYY.MM,` 或 `YYYY.MM，`；构建时自动显示为 al-folio 日期与内容两列，不补造具体日期。
+- 首页精选论文：`site/_data/selected_publications.yml`，共用论文元数据与原有插图，分别维护中英文简介；展示使用 al-folio 的论文列表样式。
 - 原 Hugo 配置、主题源码仍保留供回退参考；现行部署只构建 `site/`，不再使用旧 Hugo 工作流或 `netlify.toml`。
 
 ## 本地构建与验证
