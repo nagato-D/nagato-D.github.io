@@ -3,12 +3,10 @@ en:
   - {title: Publications, path: /publications/, key: publications}
   - {title: Notes, path: /posts/, key: notes}
   - {title: Thoughts, path: /thoughts/, key: thoughts}
-  - {title: Patents, path: /patents/, key: patents}
   - {title: Favorites, path: /favorites/, key: favorites}
 zh-cn:
   - {title: 关于, path: /zh-cn/, key: home}
   - {title: 学术论文, path: /zh-cn/publications/, key: publications}
   - {title: 笔记, path: /zh-cn/posts/, key: notes}
   - {title: 随想, path: /zh-cn/thoughts/, key: thoughts}
-  - {title: 专利, path: /zh-cn/patents/, key: patents}
   - {title: 兴趣收藏, path: /zh-cn/favorites/, key: favorites}

@@ -12,7 +12,12 @@ layout: default
       <a href="https://www.linkedin.com/in/di-yu-4179701a1"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
     </div>
   </header>
-  <article class="home-content">{{ content }}</article>
+  <article class="home-content clearfix">
+    <div class="profile float-right home-profile">
+      <img src="{{ '/assets/img/di-yu.jpg' | relative_url }}" class="img-fluid z-depth-1 rounded" width="1156" height="1078" alt="{% if page.lang == 'zh-cn' %}Di Yu 的照片{% else %}Portrait of Di Yu{% endif %}" loading="eager" fetchpriority="high">
+    </div>
+    {{ content }}
+  </article>
   <div class="home-browse">
     {% if page.lang == 'zh-cn' %}<a href="/zh-cn/posts/">浏览研究笔记 <span aria-hidden="true">→</span></a><a href="/zh-cn/thoughts/">阅读随想 <span aria-hidden="true">→</span></a>{% else %}<a href="/posts/">Browse research notes <span aria-hidden="true">→</span></a><a href="/thoughts/">Read thoughts <span aria-hidden="true">→</span></a>{% endif %}
   </div>

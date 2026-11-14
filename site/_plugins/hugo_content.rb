@@ -12,6 +12,7 @@ require "tomlrb"
 require "yaml"
 require "kramdown"
 require "kramdown-parser-gfm"
+require "nokogiri"
 
 module PreservedHugoContent
   class Renderer
@@ -174,6 +175,36 @@ module PreservedHugoContent
       text
     end
 
+    # Keep news editable in the original home Markdown while presenting it with
+    # al-folio's date/content table. Month-only source dates stay month-only.
+    def format_home_news(html)
+      return html unless @entry[:key] == "home"
+
+      fragment = Nokogiri::HTML.fragment(html)
+      heading = fragment.css("h2").find { |node| ["News", "最新动态"].include?(node.text.strip) }
+      list = heading&.next_element
+      return html unless list&.name == "ul"
+
+      items = list.xpath("./li")
+      dates = items.map { |item| item.xpath(".//text()").first&.text&.match(/\A\s*(\d{4})\.(0[1-9]|1[0-2])[,，]\s*/) }
+      return html if items.empty? || dates.any?(&:nil?)
+
+      news = Nokogiri::HTML.fragment('<div class="news home-news"><div class="table-responsive"><table class="table table-sm table-borderless"><tbody></tbody></table></div></div>')
+      body = news.at_css("tbody")
+      items.zip(dates).each do |item, match|
+        year, month = match.captures
+        label = @entry[:lang] == "zh-cn" ? "#{year} 年 #{month.to_i} 月" : Date.new(year.to_i, month.to_i, 1).strftime("%b %Y")
+        row = Nokogiri::HTML.fragment(%(<tr><th scope="row"><time datetime="#{year}-#{month}">#{label}</time></th><td></td></tr>))
+        first_text = item.xpath(".//text()").first
+        first_text.content = first_text.text.sub(match[0], "")
+        item.children.each { |child| row.at_css("td").add_child(child) }
+        body.add_child(row)
+      end
+      heading.add_class("home-news-heading")
+      list.replace(news)
+      fragment.to_html
+    end
+
     def render(markdown)
       text = protect_code(markdown.gsub("\r\n", "\n"))
       text = render_admonitions(text)
@@ -195,7 +226,7 @@ module PreservedHugoContent
       html = Kramdown::Document.new(text, input: "GFM", hard_wrap: false,
                                          syntax_highlighter: "rouge", math_engine: nil,
                                          parse_block_html: false).to_html
-      restore(html)
+      format_home_news(restore(html))
     end
   end
 
