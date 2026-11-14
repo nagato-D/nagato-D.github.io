@@ -1,0 +1,31 @@
+{% assign locale = page.lang | default: 'en' %}
+{% if locale == 'zh-cn' %}{% assign home_url = '/zh-cn/' %}{% else %}{% assign home_url = '/' %}{% endif %}
+{% assign active_key = page.section_key %}
+{% if active_key contains 'notes_' or active_key == 'posts' %}{% assign active_key = 'notes' %}{% endif %}
+{% if page.translation_key == 'home' %}{% assign active_key = 'home' %}{% endif %}
+<a class="skip-link" href="#main-content">{% if locale == 'zh-cn' %}跳转到正文{% else %}Skip to content{% endif %}</a>
+<header>
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" aria-label="{% if locale == 'zh-cn' %}主导航{% else %}Main navigation{% endif %}">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="{{ home_url | relative_url }}"><span class="font-weight-bold">Di</span> Yu</a>
+      <div class="nav-utilities">
+        {% if page.translation_url %}
+        <a class="language-switch" href="{{ page.translation_url | relative_url }}" lang="{% if locale == 'zh-cn' %}en{% else %}zh-CN{% endif %}" hreflang="{% if locale == 'zh-cn' %}en{% else %}zh-CN{% endif %}" aria-label="{% if locale == 'zh-cn' %}Read this page in English{% else %}阅读此页中文版{% endif %}">{% if locale == 'zh-cn' %}EN{% else %}中文{% endif %}</a>
+        {% endif %}
+        <button id="light-toggle" type="button" title="{% if locale == 'zh-cn' %}切换主题{% else %}Change theme{% endif %}" aria-label="{% if locale == 'zh-cn' %}切换明暗主题{% else %}Change color theme{% endif %}">
+          <i class="fa-half-sun-moon" id="light-toggle-system"></i><i class="fa-solid fa-moon" id="light-toggle-dark"></i><i class="fa-solid fa-sun" id="light-toggle-light"></i>
+        </button>
+        <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="{% if locale == 'zh-cn' %}展开导航{% else %}Toggle navigation{% endif %}">
+          <span class="icon-bar top-bar"></span><span class="icon-bar middle-bar"></span><span class="icon-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+        <ul class="navbar-nav navbar-menu-list flex-nowrap">
+          {% for item in site.data.navigation[locale] %}
+          <li class="nav-item {% if active_key == item.key %}active{% endif %}"><a class="nav-link" href="{{ item.path | relative_url }}" {% if active_key == item.key %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

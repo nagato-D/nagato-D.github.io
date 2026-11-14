@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% if page.lang == 'zh-cn' %}{% assign prefix = '/zh-cn' %}{% else %}{% assign prefix = '' %}{% endif %}
+<div class="post note-page" id="main-content">
+  <header class="post-header">
+    <a class="back-link" href="{{ prefix }}/{% if page.section_key == 'thoughts' %}thoughts{% else %}posts{% endif %}/">← {% if page.section_key == 'thoughts' %}{% if page.lang == 'zh-cn' %}随想{% else %}Thoughts{% endif %}{% else %}{% if page.lang == 'zh-cn' %}笔记{% else %}Notes{% endif %}{% endif %}</a>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-meta">Di Yu{% if page.date %} <span aria-hidden="true">·</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d' }}</time>{% endif %}</p>
+  </header>
+  <details class="article-toc" hidden><summary>{% if page.lang == 'zh-cn' %}目录{% else %}On this page{% endif %}</summary><nav aria-label="{% if page.lang == 'zh-cn' %}文章目录{% else %}Table of contents{% endif %}"></nav></details>
+  <article class="article-content">{{ content }}</article>
+</div>

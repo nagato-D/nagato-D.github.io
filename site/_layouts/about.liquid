@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="post home-page" id="main-content">
+  <header class="post-header">
+    <h1 class="post-title"><span class="font-weight-bold">Di</span> Yu</h1>
+    <p class="desc">{% if page.lang == 'zh-cn' %}香港大学 · 电机电子工程系 · 博士生{% else %}PhD Candidate · Electrical and Computer Engineering · The University of Hong Kong{% endif %}</p>
+    <div class="profile-links">
+      <a href="mailto:yudi.0211@foxmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {% if page.lang == 'zh-cn' %}邮箱{% else %}Email{% endif %}</a>
+      <a href="https://scholar.google.com/citations?user=QP33oQ0AAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+      <a href="https://github.com/nagato-D"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/di-yu-4179701a1"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+    </div>
+  </header>
+  <article class="home-content">{{ content }}</article>
+  <div class="home-browse">
+    {% if page.lang == 'zh-cn' %}<a href="/zh-cn/posts/">浏览研究笔记 <span aria-hidden="true">→</span></a><a href="/zh-cn/thoughts/">阅读随想 <span aria-hidden="true">→</span></a>{% else %}<a href="/posts/">Browse research notes <span aria-hidden="true">→</span></a><a href="/thoughts/">Read thoughts <span aria-hidden="true">→</span></a>{% endif %}
+  </div>
+</div>

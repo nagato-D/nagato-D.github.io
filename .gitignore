@@ -6,6 +6,14 @@ public/
 node_modules/
 build/
 
+# al-folio / Jekyll: output and local dependency caches
+_site/
+.bundle/
+vendor/bundle/
+.jekyll-cache/
+site/.jekyll-cache/
+site/.jekyll-metadata
+
 # Simulation downloads are shared through OneDrive
 /static/posts/note-MZM-design/
 
